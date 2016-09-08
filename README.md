@@ -34,12 +34,25 @@ Try to follow these guidelines: (This is an ever-expanding section)
 --------------------------------------------------------------------------------------------------------
 *Detailed Committing/Pushing Conventions*
 
+- Base Categories -
+
 # REP-ADMINISTRATION: your_summary (for administrative commits, not tied to any particular project)
 
 # PROJECT_NAME: your_summary (A standard committing convention for when pushing any content)
 
-# tbc.
+# NEW PROJECT: PROJECT_NAME (should be used as a label for the initial project commit)
 
+- (Suggested) Commit Categories - 
+
+# BASE_CATEGORY: 	BF (Abbreviation for Bug Fixes)
+			NF (Abbreviation for New Feature)
+			FM (Abbreviation for Feature Modification)
+			FA (Abbriviation for File Additions)
+			U  (Abbriviation for "Generic" Update)
+
+- Summary Commit - 
+
+BASE_CATEGORY: COMMIT_CATEGORY your_summary
 --------------------------------------------------------------------------------------------------------
 
 
