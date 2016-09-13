@@ -44,7 +44,8 @@ Try to follow these guidelines: (This is an ever-expanding section)
 
 - (Suggested) Commit Categories - 
 
-# BASE_CATEGORY: 	BF (Abbreviation for Bug Fixes)
+# BASE_CATEGORY: 	
+			BF (Abbreviation for Bug Fixes)
 			NF (Abbreviation for New Feature)
 			FM (Abbreviation for Feature Modification)
 			FA (Abbriviation for File Additions)
