@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Hello World</title> 
+        <link rel="stylesheet" href="../AngularSocial/styles/bootstrap.min.css">
+        <link rel="stylesheet" href="../AngularSocial/styles/bootstrap-theme.min.css">       
+    </head>
+    <body ng-app="app">
+        <h1>HELLO WORLD</h1>
+
+        <button class="btn btn-medium" socialshare socialshare-provider="facebook" 
+            socialshare-url="https://www.triona.se/">
+            Facebook
+        </button>
+    <script type="text/javascript" src="../AngularSocial/scripts/angular.js"></script>
+    <script type="text/javascript" src="../AngularSocial/scripts/angular-route.js"></script>    
+    <script type="text/javascript" src="../AngularSocial/scripts/angular-socialshare.js"></script>
+    <script type="text/javascript" src="../AngularSocial/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="../AngularSocial/scripts/bootstrap.min.js"></script>
+    <script>
+        var app = angular.module("app", [
+            "720kb.socialshare"
+        ]);
+
+    </script>
+    <!--<script type="text/javascript" src="../AngularSocial/app/app.module.js"></script>-->
+    </body>
+</html>
