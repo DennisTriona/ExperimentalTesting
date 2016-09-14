@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Share Palace - Share stuff easy!</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body ng-app="app" ng-controller="shareController">
+    <div class="container">
+        <div class="row text-center">
+            <h1>Share Palace</h1>
+
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="mainContent" class="col-md-2 control-label">Your content</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="mainContent" ng-model="content" placeholder="Your message!">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mainLink" class="col-md-2 control-label">Your link</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="mainLink" ng-model="link" placeholder="http://www.triona.se/">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{ link }}</h3>
+            </div>
+            <div class="panel-body">
+                {{ content }}
+            </div>
+        </div>
+        <div class="row text-center" style="margin: 15px;">
+            <button id="btnFacebook" class="btn btn-default" socialshare socialshare-provider="facebook"
+                    socialshare-url="https://www.triona.se/">
+                <i class="fa fa-facebook-square fa-5x"></i>
+            </button>
+            <button class="btn btn-default" socialshare socialshare-text="You should know about Triona!"
+                    socialshare-provider="twitter" socialshare-url="https://www.triona.se" socialshare-hashtags="softwareDevelopment">
+                <i class="fa fa-twitter-square fa-5x"></i>
+            </button>
+            <button class="btn btn-default" socialshare socialshare-text="Software by Triona"
+                    socialshare-provider="linkedin" socialshare-url="https://www.triona.se">
+                <i class="fa fa-linkedin-square fa-5x"></i>
+            </button>
+        </div>
+    </div>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-socialshare.js"></script>
+    <script src="Scripts/jquery-3.1.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script>
+        var app = angular.module("app", [
+            "720kb.socialshare"
+        ]);
+
+
+        app.controller("shareController", function ($scope) {
+            // $scope.link = window.location.href;
+            $scope.link = "triona.se";
+            $scope.content = "Your message!";
+
+            // $("#btnFacebook").attr("socialshare-url", $scope.link);
+        });
+
+
+    </script>
+</body>
+</html>
