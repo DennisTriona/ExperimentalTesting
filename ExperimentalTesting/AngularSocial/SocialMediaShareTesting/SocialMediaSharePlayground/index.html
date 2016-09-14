@@ -5,6 +5,7 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/helper.css" rel="stylesheet" />
 </head>
 <body ng-app="app" ng-controller="shareController">
     <div class="container">
@@ -12,41 +13,69 @@
             <h1>Share Palace</h1>
 
             <form class="form-horizontal">
-                <div class="form-group">
+                <!--<div class="form-group">
                     <label for="mainContent" class="col-md-2 control-label">Your content</label>
                     <div class="col-md-10">
                         <input type="text" class="form-control" id="mainContent" ng-model="content" placeholder="Your message!">
                     </div>
-                </div>
+                </div>-->
                 <div class="form-group">
                     <label for="mainLink" class="col-md-2 control-label">Your link</label>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" id="mainLink" ng-model="link" placeholder="http://www.triona.se/">
+                        <input type="text" class="form-control" id="mainLink" ng-model="link">
                     </div>
                 </div>
             </form>
         </div>
-        <div class="panel panel-default">
+
+        <!--<div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">{{ link }}</h3>
             </div>
             <div class="panel-body">
                 {{ content }}
             </div>
-        </div>
-        <div class="row text-center" style="margin: 15px;">
-            <button id="btnFacebook" class="btn btn-default" socialshare socialshare-provider="facebook"
-                    socialshare-url="https://www.triona.se/">
-                <i class="fa fa-facebook-square fa-5x"></i>
-            </button>
-            <button class="btn btn-default" socialshare socialshare-text="You should know about Triona!"
-                    socialshare-provider="twitter" socialshare-url="https://www.triona.se" socialshare-hashtags="softwareDevelopment">
-                <i class="fa fa-twitter-square fa-5x"></i>
-            </button>
-            <button class="btn btn-default" socialshare socialshare-text="Software by Triona"
-                    socialshare-provider="linkedin" socialshare-url="https://www.triona.se">
-                <i class="fa fa-linkedin-square fa-5x"></i>
-            </button>
+        </div>-->
+        <div class="container-fluid">
+            <h2 class="text-center">Socialshare.js (Uses Angularjs)</h2>
+            <p class="text-center">Regular Bootstrap buttons with large Fontawesome Icons</p>
+            <div class="row text-center" style="margin: 15px;">
+                <button id="btnFacebook" class="btn btn-default" ng-model="link" socialshare socialshare-provider="facebook"
+                        socialshare-url="{{ link }}">
+                    <i class="fa fa-facebook-square fa-5x"></i>
+                </button>
+
+                <!-- Twitter works very strange, wont accept the url like the others -->
+                <button class="btn btn-default" ng-model="link" socialshare socialshare-provider="twitter"
+                        socialshare-text="{{ link }}" socialshare-url="{{ link }}" socialshare-hashtags="softwareDevelopment">
+                    <i class="fa fa-twitter-square fa-5x"></i>
+                </button>
+                <button class="btn btn-default" ng-model="link" socialshare
+                        socialshare-provider="linkedin" socialshare-url="{{ link }}">
+                    <i class="fa fa-linkedin-square fa-5x"></i>
+                </button>
+                <button class="btn btn-default" ng-model="link" socialshare socialshare-provider="google" socialshare-url="{{ link }}">
+                    <i class="fa fa-google fa-5x"></i>
+                </button>
+                <button class="btn btn-default" ng-model="link" socialshare socialshare-provider="pinterest" socialshar-url="{{ link }}">
+                    <i class="fa fa-pinterest fa-5x"></i>
+                </button>
+            </div>
+            <p class="text-center">Custom CSS buttons with Socialshare, Bootstrap and Fontawesome</p>
+            <div class="row text-center">
+                <a class="btn btn-medium center-content color-black radius3 border bg-white facebook-hover" ng-model="link" socialshare socialshare-provider="facebook"
+                   socialshare-url="{{ link }}">
+                    <i class="fa fa-facebook-f color-facebook-blue"></i>&nbsp;<b>Facebook</b>
+                </a>
+                <a class="btn btn-medium center-content color-black radius3 border bg-white twitter-hover" ng-model="link" socialshare socialshare-provider="twitter"
+                   socialshare-url="{{ link }}">
+                    <i class="fa fa-twitter color-twitter-blue"></i>&nbsp;<b>Twitter</b>
+                </a>
+                <a class="btn btn-medium center-content color-black radius3 border bg-white linkedin-hover" ng-model="link" socialshare socialshare-provider="linkedin"
+                   socialshare-url="{{ link }}">
+                    <i class="fa fa-linkedin color-linkedin-blue"></i>&nbsp;<b>Linkedin</b>
+                </a>
+            </div>
         </div>
     </div>
     <script src="Scripts/angular.js"></script>
@@ -62,7 +91,7 @@
 
         app.controller("shareController", function ($scope) {
             // $scope.link = window.location.href;
-            $scope.link = "triona.se";
+            $scope.link = "";
             $scope.content = "Your message!";
 
             // $("#btnFacebook").attr("socialshare-url", $scope.link);
