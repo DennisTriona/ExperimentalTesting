@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Image Viewer</title>
+    <!-- style References -->
+    <link href="content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/css/bootstrap.custom.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <div style="font-size:large">Image Viewer</div>
+        </div>
+        <div ng-view>
+            <!-- subview from routing will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+
+    <!-- Scripts -->
+    <script src="app/app.route.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/services/ImageService.js"></script>
+    <script src="app/controllers/ImageController.js"></script>
+</body>
+</html>
