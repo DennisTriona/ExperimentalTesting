@@ -96,7 +96,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\views\ImageView-AngularJS-SocialShare.html" />
+    <Content Include="app\views\ImageView-ImageShare.html" />
     <Content Include="bower_components\angular-socialshare\dist\angular-socialshare.js" />
     <Content Include="bower_components\angular-socialshare\dist\angular-socialshare.min.js" />
     <Content Include="bower_components\angular-socialshare\index.js" />
@@ -104,6 +104,7 @@
     <Content Include="content\font-awesome.css" />
     <Content Include="content\font-awesome.min.css" />
     <Content Include="content\mycss\ImageViewer.css" />
+    <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -134,9 +135,13 @@
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.route.ts" />
     <TypeScriptCompile Include="app\controllers\ImageController.ts" />
+    <TypeScriptCompile Include="app\controllers\ImageSharingController.ts" />
     <TypeScriptCompile Include="app\interfaces\IImage.ts" />
     <TypeScriptCompile Include="app\interfaces\IImageService.ts" />
+    <TypeScriptCompile Include="app\interfaces\IShareSite.ts" />
+    <TypeScriptCompile Include="app\interfaces\ISharingService.ts" />
     <TypeScriptCompile Include="app\services\ImageService.ts" />
+    <TypeScriptCompile Include="app\services\SharingService.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-mocks.d.ts" />
