@@ -1,0 +1,11 @@
+[
+  {
+    "outputFileName": "Content/bundle.css",
+    "inputFiles": [
+      "Content/bootstrap-theme.min.css",
+      "Content/bootstrap.min.css",
+      "Content/font-awesome.min.css",
+      "Content/helper.css"
+    ]
+  }
+]
