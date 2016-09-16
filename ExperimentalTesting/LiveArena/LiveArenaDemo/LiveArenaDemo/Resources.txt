@@ -1,0 +1,12 @@
+﻿Images
+
+Live Arena
+https://bcstatic.blob.core.windows.net/play-site-images/6e53010d-0696-47ff-a4b7-4d132e5033fe-LiveArena_Hockey_HOMEpage_logo.jpg?sv=2014-02-14&sr=c&si=play-site-images&sig=UDp4nJ6iZAyz9R0M7qIG8Qs865OEXHFZUzyixC8ELnU%3D
+Modo
+https://bcstatic.blob.core.windows.net/default-images/83ab38c8-946f-4a9b-c99f-2317720cb9fb-p_5180951553_01084122_large.jpg?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D
+Skellefteå
+https://bcstatic.blob.core.windows.net/default-images/cd91aed5-6d6d-4473-f92d-18718df86472-p_17327020033_18071205_large.jpg?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D
+HV71
+https://bcstatic.blob.core.windows.net/default-images/0d8f063a-bf30-4502-92d9-bcf80ebd7333-HV71.gif?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D
+Rögle
+https://bcstatic.blob.core.windows.net/default-images/d9a246cc-75e8-4911-e919-1b18aaebfa99-RBK.png?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D

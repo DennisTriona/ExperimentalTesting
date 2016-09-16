@@ -6,14 +6,27 @@
     <title>TypeScript HTML App</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/helper.css" rel="stylesheet" />
 </head>
-<body>
-    <h1 class="text-center">Hello World!</h1>
+<body><!-- Resources.txt for picture links -->
+<div class="container-fluid">
+    <img src="https://bcstatic.blob.core.windows.net/play-site-images/6e53010d-0696-47ff-a4b7-4d132e5033fe-LiveArena_Hockey_HOMEpage_logo.jpg?sv=2014-02-14&sr=c&si=play-site-images&sig=UDp4nJ6iZAyz9R0M7qIG8Qs865OEXHFZUzyixC8ELnU%3D"/>
 
-    <div></div>
-    <script src="Scripts/angular.min.js"></script>
-    <script src="Scripts/angular-route.min.js"></script>
-    <script src="app/app.routes.js"></script>
-    <script src="app/app.module.js"></script>
+    <div class="container">
+        <div class="row">
+            <div id="imageDisplay" class="col-md-6 element-container">
+                <img src="https://bcstatic.blob.core.windows.net/default-images/cd91aed5-6d6d-4473-f92d-18718df86472-p_17327020033_18071205_large.jpg?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D"/>
+            </div>
+            <div id="grayDisplay" class="col-md-6 bg-grey element-container">
+                <h1>Hello World</h1>
+                <h4>Goodbye World</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Scripts/angular.min.js"></script>
+<script src="Scripts/angular-route.min.js"></script>
+<script src="app/app.routes.js"></script>
+<script src="app/app.module.js"></script>
 </body>
 </html>
