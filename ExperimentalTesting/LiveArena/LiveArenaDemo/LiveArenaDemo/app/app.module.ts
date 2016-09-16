@@ -1,7 +1,7 @@
 ﻿module app {
     
-    var main = angular.module("ShareDemo", [/*ngRoute*/]);
+    var main = angular.module("ShareDemo", ["ngRoute"]);
 
-    //main.config();
+    main.config(app.Routes.configureRoutes);
 
 }
