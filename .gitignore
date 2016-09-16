@@ -250,3 +250,12 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+ExperimentalTesting/AngularEggly/Eggly/Eggly.sln
+ExperimentalTesting/AngularEggly/Eggly/Eggly/packages.config
+ExperimentalTesting/AngularEggly/Eggly/Eggly/web.Debug.config
+ExperimentalTesting/AngularEggly/Eggly/Eggly/web.Release.config
+ExperimentalTesting/AngularEggly/Eggly/Eggly/web.config
+ImageViewer/HelloImageViewer/HelloImageViewer.sln
+ImageViewer/HelloImageViewer/HelloImageViewer/web.Debug.config
+ImageViewer/HelloImageViewer/HelloImageViewer/web.Release.config
+ImageViewer/HelloImageViewer/HelloImageViewer/web.config
