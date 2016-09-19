@@ -1,0 +1,12 @@
+﻿module app {
+    
+<<<<<<< .merge_file_a13988
+    var main = angular.module("app", ["ngRoute", "720kb.socialshare"]);
+
+    main.config(app.Routes.configureRoutes);
+=======
+    var main = angular.module("ShareDemo", ["ngRoute"]);    // Setup the main angular module and define its dependencies. 
+>>>>>>> .merge_file_a10756
+
+    main.config(app.Routes.configureRoutes);                // Call the configuration method for the Route-class, setting up the routing for the application. 
+}
