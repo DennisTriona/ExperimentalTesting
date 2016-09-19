@@ -4,7 +4,11 @@ var app;
         function Routes() {
         }
         Routes.configureRoutes = function ($routeProvider) {
-            $routeProvider.when("/home", { controller: "app.controllers.ShareController", templateUrl: "/app/views/Share.html", controllerAs: "ShareController" }); // Add a New route with a New controller.
+            $routeProvider.when("/home", {
+                controller: "app.controllers.ShareController",
+                templateUrl: "/app/views/Share.html",
+                controllerAs: "ShareController"
+            }); // Add a New route with a New controller.
             $routeProvider.when("/ItemDetail/:itemID", {
                 controller: "app.controllers.ItemDetailController",
                 templateUrl: "app.views...",

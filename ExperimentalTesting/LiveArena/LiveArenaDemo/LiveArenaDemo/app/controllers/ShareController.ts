@@ -2,8 +2,8 @@
 
     export class ShareController {
 
-        shareSiteList: app.interfaces.IShareSite[];
-        sharingService: app.interfaces.IShareService;
+        shareSiteList: app.interfaces.IShareSite[]; // Array of sharing sites
+        sharingService: app.interfaces.IShareService; 
 
         //Inject the service!
 
@@ -15,7 +15,7 @@
 
         getShareSites(): void {
 
-            this.shareSiteList = this.sharingService.getShareSites();
+            this.shareSiteList = this.sharingService.getShareSites(); // Reference .shareSiteList to get the collection
         }
     }
 

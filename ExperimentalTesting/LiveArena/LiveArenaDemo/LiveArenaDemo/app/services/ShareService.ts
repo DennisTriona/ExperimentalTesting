@@ -5,10 +5,14 @@
         shareSites: app.interfaces.IShareSite[];
         constructor(){}
 
+        // Collection of share sites, their name and extra
         getShareSites(): app.interfaces.IShareSite[] {
             var shareSites: app.interfaces.IShareSite[] = [
-                { provider: "Facebook", imgUrl: "fa fa-5x fa-facebook-square" },
-                { provider: "Twitter", imgUrl: "fa fa-5x fa-twitter-square"}
+                { provider: "google", imgUrl: "fa-google-plus-square", color: "color-googleplus-red" },
+                { provider: "linkedin", imgUrl: "fa-linkedin-square", color: "color-linkedin-blue" },
+                { provider: "twitter", imgUrl: "fa-twitter-square", color: "color-twitter-blue" },
+                { provider: "facebook", imgUrl: "fa-facebook-square", color: "color-facebook-blue" }
+                
             ];
             return shareSites;
         }
