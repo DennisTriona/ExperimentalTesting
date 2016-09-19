@@ -2,6 +2,7 @@ var app;
 (function (app) {
     var services;
     (function (services) {
+        // A class to manage the resource services of the application. 
         var ResourceService = (function () {
             function ResourceService() {
                 this.selectionItems = [

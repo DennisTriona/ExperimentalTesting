@@ -2,6 +2,7 @@ var app;
 (function (app) {
     var controllers;
     (function (controllers) {
+        // A controller to manage the item-detail view.
         var ItemDetailController = (function () {
             function ItemDetailController($routeParams, resourceService) {
                 this.$routeParams = $routeParams;

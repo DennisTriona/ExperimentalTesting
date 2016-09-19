@@ -1,5 +1,6 @@
 ﻿module app.controllers {
 
+    // A controller to manage the item-detail view.
     class ItemDetailController {
         resourceService: app.interfaces.IResourceService;
         item: app.interfaces.ISelectItem;
