@@ -1,6 +1,6 @@
 ﻿module app.services {
 
-    export class SelectionService implements app.interfaces.ISelectionService {
+    export class SelectionService implements app.interfaces.ISelectionModel {
         selectionItems: app.interfaces.ISelectionItem[];    // selectionItems: array containing a collection of slectionItems. 
 
         getSelectionItems(): app.interfaces.ISelectionItem[] {
