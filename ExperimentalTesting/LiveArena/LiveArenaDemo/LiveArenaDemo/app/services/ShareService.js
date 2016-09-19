@@ -12,7 +12,7 @@ var app;
                 ];
             };
             return ShareService;
-        }());
+        })();
         services.ShareService = ShareService;
         angular.module("ShareDemo").service("app.services.ShareService", ShareService);
     })(services = app.services || (app.services = {}));

@@ -14,7 +14,7 @@ var app;
             //Inject the service!
             ShareController.$inject = ["app.services.ShareService"];
             return ShareController;
-        }());
+        })();
         controllers.ShareController = ShareController;
         angular.module("ShareDemo").controller("app.controllers.ShareController", ShareController);
     })(controllers = app.controllers || (app.controllers = {}));
