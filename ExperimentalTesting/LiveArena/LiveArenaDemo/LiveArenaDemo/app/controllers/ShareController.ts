@@ -1,5 +1,6 @@
 ﻿module app.controllers {
 
+    //This is the sharecontroller
     export class ShareController {
         shareSiteList: app.interfaces.IShareSite[];
         sharingService: app.interfaces.IShareService;
@@ -17,5 +18,5 @@
         }
     }
 
-    angular.module("app").controller("app.controllers.ShareController", ShareController);
+    angular.module("ShareDemo").controller("app.controllers.ShareController", ShareController);
 }

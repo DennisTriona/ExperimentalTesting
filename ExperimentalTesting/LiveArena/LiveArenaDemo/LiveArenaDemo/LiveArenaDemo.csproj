@@ -69,10 +69,13 @@
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routes.ts" />
     <TypeScriptCompile Include="app\controllers\SelectionController.ts" />
+    <TypeScriptCompile Include="app\controllers\ShareController.ts" />
     <TypeScriptCompile Include="app\interfaces\ISelectionItem.ts" />
     <TypeScriptCompile Include="app\interfaces\ISelectionItemParams.ts" />
     <TypeScriptCompile Include="app\interfaces\ISelectionModel.ts" />
+    <TypeScriptCompile Include="app\interfaces\IShare.ts" />
     <TypeScriptCompile Include="app\services\SelectionService.ts" />
+    <TypeScriptCompile Include="app\services\ShareService.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />

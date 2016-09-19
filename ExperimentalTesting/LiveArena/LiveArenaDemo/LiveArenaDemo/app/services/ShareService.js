@@ -2,6 +2,7 @@ var app;
 (function (app) {
     var services;
     (function (services) {
+        //Shareservice!
         var ShareService = (function () {
             function ShareService() {
             }
@@ -13,7 +14,7 @@ var app;
             return ShareService;
         }());
         services.ShareService = ShareService;
-        angular.module("app").service("app.services.ShareService", ShareService);
+        angular.module("ShareDemo").service("app.services.ShareService", ShareService);
     })(services = app.services || (app.services = {}));
 })(app || (app = {}));
 //# sourceMappingURL=ShareService.js.map
