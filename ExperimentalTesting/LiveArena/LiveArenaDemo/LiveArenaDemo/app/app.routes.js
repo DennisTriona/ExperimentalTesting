@@ -5,10 +5,15 @@ var app;
         }
         Routes.configureRoutes = function ($routeProvider) {
             $routeProvider.when("/home", { controller: "app.controllers.ShareController", templateUrl: "/app/views/Share.html", controllerAs: "ShareController" }); // Add a New route with a New controller.
-            $routeProvider.otherwise({ redirectTo: "/home" }); // Add a default case for the $routeProvider.
+            $routeProvider.when("/ItemDetail/:itemID", {
+                controller: "app.controllers.ItemDetailController",
+                templateUrl: "app.views...",
+                controllerAs: "DetailCtrl"
+            });
+            $routeProvider.otherwise({ redirectTo: "/home" }); //Default catch all
         };
         // Class that manages all the routing
-        Routes.$inject = ["$routeProvider"]; // dependency inject for $routeProvider.                              
+        Routes.$inject = ["$routeProvider"];
         return Routes;
     }());
     app.Routes = Routes;

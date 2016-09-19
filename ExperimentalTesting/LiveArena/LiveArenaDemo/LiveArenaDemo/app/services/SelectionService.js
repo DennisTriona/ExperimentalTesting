@@ -12,7 +12,7 @@ var app;
                 return selectionItems;
             };
             return SelectionService;
-        }());
+        })();
         services.SelectionService = SelectionService;
         angular.module("ShareDemo").service("app.services.SelectionService", SelectionService);
     })(services = app.services || (app.services = {}));
