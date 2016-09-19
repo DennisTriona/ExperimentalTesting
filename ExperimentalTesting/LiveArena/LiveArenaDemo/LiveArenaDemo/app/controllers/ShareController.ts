@@ -1,7 +1,7 @@
 ﻿module app.controllers {
 
-    //This is the sharecontroller
     export class ShareController {
+
         shareSiteList: app.interfaces.IShareSite[];
         sharingService: app.interfaces.IShareService;
 
@@ -14,6 +14,7 @@
         }
 
         getShareSites(): void {
+
             this.shareSiteList = this.sharingService.getShareSites();
         }
     }
