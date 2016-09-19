@@ -2,7 +2,6 @@ var app;
 (function (app) {
     var controllers;
     (function (controllers) {
-        //This is the sharecontroller
         var ShareController = (function () {
             function ShareController(sharingService) {
                 this.sharingService = sharingService;

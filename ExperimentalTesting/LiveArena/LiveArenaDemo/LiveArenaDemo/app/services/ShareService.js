@@ -7,9 +7,11 @@ var app;
             function ShareService() {
             }
             ShareService.prototype.getShareSites = function () {
-                return this.shareSites = [
-                    { provider: "Facebook", imgUrl: "fa fa-5x fa-facebook-square" }
+                var shareSites = [
+                    { provider: "Facebook", imgUrl: "fa fa-5x fa-facebook-square" },
+                    { provider: "Twitter", imgUrl: "fa fa-5x fa-twitter-square" }
                 ];
+                return shareSites;
             };
             return ShareService;
         })();
