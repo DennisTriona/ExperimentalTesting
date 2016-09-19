@@ -2,6 +2,7 @@ var app;
 (function (app) {
     var services;
     (function (services) {
+        // A class to manage the resource services of the application. 
         var ResourceService = (function () {
             function ResourceService() {
                 this.selectionItems = [
@@ -28,7 +29,7 @@ var app;
                 return this.dummyItem;
             };
             return ResourceService;
-        }());
+        })();
         services.ResourceService = ResourceService;
         angular.module("ShareDemo").service("app.services.ResourceService", ResourceService);
     })(services = app.services || (app.services = {}));

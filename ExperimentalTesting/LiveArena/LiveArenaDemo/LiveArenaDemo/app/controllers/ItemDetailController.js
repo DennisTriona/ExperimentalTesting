@@ -2,6 +2,7 @@ var app;
 (function (app) {
     var controllers;
     (function (controllers) {
+        // A controller to manage the item-detail view.
         var ItemDetailController = (function () {
             function ItemDetailController($routeParams, resourceService) {
                 this.$routeParams = $routeParams;
@@ -11,7 +12,7 @@ var app;
             }
             ItemDetailController.$inject = ["$routeParams", "app.services.ResourceService"];
             return ItemDetailController;
-        }());
+        })();
         angular.module("ShareDemo").controller("app.controllers.ItemDetailController", ItemDetailController);
     })(controllers = app.controllers || (app.controllers = {}));
 })(app || (app = {}));

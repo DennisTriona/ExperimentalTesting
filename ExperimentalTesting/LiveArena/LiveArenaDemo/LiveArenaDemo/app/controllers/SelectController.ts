@@ -1,8 +1,9 @@
 ﻿module app.controllers {
 
+    // A controller that manages the selection and naviagion between different selection-items
     class SelectController {
-        resourceService: app.interfaces.IResourceService; // class-instance of the selectionService
-        resourceList: app.interfaces.ISelectItem[];     // Array containing the available selection-items.
+        resourceService: app.interfaces.IResourceService;
+        resourceList: app.interfaces.ISelectItem[];       
         
         static $inject = ["app.services.ResourceService"];
         constructor(selectionService: app.interfaces.IResourceService) {

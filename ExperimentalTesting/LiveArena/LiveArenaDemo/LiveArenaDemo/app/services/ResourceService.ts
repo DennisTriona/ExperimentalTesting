@@ -1,5 +1,6 @@
 ﻿module app.services {
 
+    // A class to manage the resource services of the application. 
     export class ResourceService implements app.interfaces.IResourceService {
         
         selectionItems: app.interfaces.ISelectItem[];
