@@ -4,6 +4,7 @@
         // Class that manages all the routing
         static $inject = ["$routeProvider"];                           
         static configureRoutes($routeProvider: ng.route.IRouteProvider) {
+            // TODO: Create a Directive
             $routeProvider.when("/home",
             {
                 controller: "app.controllers.ShareController",
