@@ -1,4 +1,4 @@
-﻿module app.directives {
+﻿module app {
     
     "use strict";
 
@@ -40,5 +40,5 @@
     }
 
     //angular.module("ShareDemo").directive("app.directives.ShareDirective", shareDirective);
-    angular.module("ShareDemo").directive("app.directives.ShareDirective", ShareDirective.factory());
+    angular.module("ShareDemo").directive("shareDirective", ShareDirective.factory());
 }

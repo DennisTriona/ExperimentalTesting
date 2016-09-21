@@ -261,6 +261,9 @@ button {
     cursor: none;
 }
 /*--- COLORS ---*/
+.color-lightgrey {
+    color: #888;
+}
 .color-white {
     color: #fff;
 }
@@ -664,7 +667,7 @@ button {
 }
 
 .bg-grey {
-    background-color: lightgrey;
+    background-color: #E2E6E7;
 }
 
 .bg-error {
