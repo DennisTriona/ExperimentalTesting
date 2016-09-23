@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="">
     <!-- Own Styles -->
     <link href="Content/helper.css" rel="stylesheet" />
+    <link href="Content/custom-content/custom.css" rel="stylesheet" />
 </head>
 
 <body ng-app="ShareDemo">
@@ -28,25 +29,12 @@
         <img src="Content/images/LiveArenaLogo.jpg" />
         <div class="container">
             <div class="row">
-                <div id="imageDisplay" class="col-md-6 element-container">
-                    <img src="Content/images/SAIK.jpg" />
-                </div>
-                <div id="grayDisplay" class="col-md-6 bg-grey element-container">
-                    <h1>Hello World</h1>
-                    <!-- Using the directive as attribute we can format the datestring -->
-                    <h4><span class="color-lightgrey" date-now="dd MMM yyyy HH:mm"></span></h4>
-                    <p>
-                        Bacon ipsum dolor amet chicken cupim cow chuck ham hock ham picanha venison tail alcatra spare ribs beef pork loin pork chop.
-                        Frankfurter beef ribs pork, venison pork chop sausage pork belly ground round bresaola prosciutto turducken flank. Beef andouille boudin tri-tip corned beef prosciutto.
-                        Leberkas alcatra turkey tri-tip sirloin, corned beef spare ribs ribeye shankle cupim venison kevin fatback turducken.
-                    </p>
-                    <!-- Socialshare test -->
-                    <!--<h3>Angular share test</h3>-->
-                    <div class="row">
-                        <!-- The social media share buttons -->
-                        <share-buttons></share-buttons>
-                    </div>
-                </div>
+                <ng-view>
+                    <!-- Item Detail view -->
+                </ng-view>
+            </div>
+            <div class="row" style="margin-top:25px">
+              <ng-include class="ng-scope" src="'app/views/SelectionList.html'"></ng-include>
             </div>
         </div>
     </div>
@@ -67,6 +55,7 @@
     <!-- Share-Feature -->
     <script src="app/services/ShareService.js"></script>
     <script src="app/controllers/ShareController.js"></script>
+
     <script src="app/directives/ShareDirective.js"></script>
     <script src="app/directives/DateDirective.js"></script>
 </body>

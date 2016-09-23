@@ -6,16 +6,16 @@ var app;
         var ResourceService = (function () {
             function ResourceService() {
                 this.selectionItems = [
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
+                    { id: 0, description: "SDHL Linköping HC - HV 71", date: "24 sep. 2016 14:25", publisher: "by Linköping HC SDHL", imgUrl: "https://bcstatic.azureedge.net/default-images/7028ac9a-32df-4b19-f005-3ae5d64ce919-c_22735_15142118_large_thumbnail.jpg?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3Dhttps://bcstatic.azureedge.net/default-images/7028ac9a-32df-4b19-f005-3ae5d64ce919-c_22735_15142118_large_thumbnail.jpg?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D" },
+                    { id: 1, description: "SDHL IF Sundsvall Hockey - Luleå", date: "24 sep. 2016 15:25", publisher: "by Sundsvall Hockey SDHL", imgUrl: "https://bcstatic.azureedge.net/default-images/6fb06053-9ef2-4fd0-a941-15ff509d6bb8-p_15338561537_01073039_large_thumbnail.jpg?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D" },
+                    { id: 2, description: "SDHL Leksands IF - AIK", date: "24 sep. 2016 15:55", publisher: "by Leksands IF SDHL", imgUrl: "https://bcstatic.azureedge.net/laimages/45977c00-52e3-4006-8cb1-f7f05dab06c5-c_36461_11104205_large_thumbnail.jpg?sv=2014-02-14&sr=c&si=laimages&sig=lTg32QAVw7qRhsN0lSQJ6vtLIiBjWEyITsazwuEZII0%3D" },
+                    { id: 3, description: "SDHL SDE HF - Djurgårdens IF", date: "24 sep. 2016 16:40", publisher: "by SDE Hockey SDHL", imgUrl: "https://bcstatic.azureedge.net/default-images/7652e22f-ecd2-48cf-bb38-c34408d5c547-p_578511873_large_thumbnail.jpg?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D" },
+                    { id: 4, description: "SDHL Brynäs IF - MODO Hockey", date: "24 sep. 2016 16:55", publisher: "by Brynäs IF SDHL", imgUrl: "https://bcstatic.azureedge.net/default-images/73924713-b216-43a9-b6ca-a0d4ae572df3-p_14445081601_06121424_large_thumbnail.jpg?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D" },
+                    { id: 5, description: "SDHL Brynäs IF - Luleå HF", date: "25 sep. 2016 10:55", publisher: "by Brynäs IF SDHL", imgUrl: "https://bcstatic.azureedge.net/default-images/73924713-b216-43a9-b6ca-a0d4ae572df3-p_14445081601_06121424_large_thumbnail.jpg?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D" },
+                    { id: 6, description: "SDHL Djurgårdens IF - Linköping HC", date: "27 sep. 2016 19:25", publisher: "by Djurgårdens IF SDHL", imgUrl: "https://bcstatic.azureedge.net/laimages/fe935415-0988-460e-ba77-6026baf391fc-c_45577_08110448_large_thumbnail.jpg?sv=2014-02-14&sr=c&si=laimages&sig=lTg32QAVw7qRhsN0lSQJ6vtLIiBjWEyITsazwuEZII0%3D" },
+                    { id: 7, description: "SDHL HV 71 - MODO Hockey", date: "1 okt. 2016 16:25", publisher: "by HV71 SDHL", imgUrl: "https://bcstatic.azureedge.net/default-images/d1c747d2-8738-45e2-e413-106dc1f80da1-HV71_thumbnail.gif?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D" },
                 ];
-                this.dummyItem = { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" };
+                this.dummyItem = { id: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA", imgUrl: "http://www.codeodor.com/images/Empty_set.png" };
             }
             ResourceService.prototype.getSelectionItems = function () {
                 return this.selectionItems;

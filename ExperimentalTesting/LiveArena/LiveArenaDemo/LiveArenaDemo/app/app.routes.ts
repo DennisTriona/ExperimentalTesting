@@ -13,7 +13,7 @@
             });     // Add a New route with a New controller.
             $routeProvider.when("/ItemDetail/:itemID", {
                 controller: "app.controllers.ItemDetailController",
-                templateUrl: "app.views...", /*TODO: Add path for view*/
+                templateUrl: "app/views/ItemDetails.html",
                 controllerAs: "DetailCtrl"
             });
             $routeProvider.otherwise({ redirectTo: "/home" }); //Default catch all

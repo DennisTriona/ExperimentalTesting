@@ -1,0 +1,24 @@
+﻿<div id="SelectionList" ng-controller="app.controllers.SelectController as selectCtrl">
+    <div id="MockCategoryHeader" class="thumbNailHeaderLine">
+        <h5>SDHL</h5>
+    </div>
+    <ul id="MockCategoryList" align="center">
+        <li class="Item-Content" ng-repeat="item in selectCtrl.resourceList" style="margin-bottom:10px;margin-right:40px">
+            <a ng-href="#ItemDetail/{{item.id}}">
+                <div class="eventItemThumbnailContainer" style="cursor:pointer"
+                     ng-href="#ItemDetail/{{item.id}}">
+                    <!-- Image -->
+                    <figure>
+                        <img ng-src="{{item.imgUrl}}" style="height:146px;width:261px;position:relative;border:1px solid lightgrey" />
+                    </figure>
+                    <!-- Description -->
+                    <div id="item-description" class="eventItemThumbnailTitle">{{item.description}}</div>
+                    <!-- Date -->
+                    <div id="item-date" class="eventItemThumbnailDate">{{item.date}}</div>
+                    <!-- Publisher -->
+                    <div id="item-publisher" class="eventItemThumbnailLink">{{item.publisher}}</div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>

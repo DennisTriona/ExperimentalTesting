@@ -1,0 +1,16 @@
+﻿<div id="imageDisplay" class="col-md-6 element-container">
+    <img src="{{DetailCtrl.item.imgUrl}}" />
+</div>
+<div id="grayDisplay" class="col-md-6 bg-grey element-container">
+    <h1>{{DetailCtrl.item.description}}</h1>
+    <!-- Using the directive as attribute we can format the datestring -->
+    <!--<h4><span class="color-lightgrey" date-now="dd MMM yyyy HH:mm"></span></h4>-->
+    <h4>{{DetailCtrl.item.date}}</h4>
+    <p>
+    </p>
+    <p>{{DetailCtrl.item.publisher}}</p>
+    <div class="row">
+        <!-- The social media share buttons -->
+        <share-buttons></share-buttons>
+    </div>
+</div>
