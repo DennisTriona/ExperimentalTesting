@@ -2,8 +2,13 @@
 
     export class ShareController {
 
-        shareSiteList: app.interfaces.IShareSite[];
-        sharingService: app.interfaces.IShareService;
+        shareSiteList: app.interfaces.IShareSite[]; // Array of sharing sites
+        sharingService: app.interfaces.IShareService; 
+
+        getShareSites(): void {
+
+            this.shareSiteList = this.sharingService.getShareSites(); // Reference .shareSiteList to get the collection
+        }
 
         //Inject the service!
 
@@ -11,11 +16,6 @@
         constructor(sharingService: app.interfaces.IShareService) {
             this.sharingService = sharingService;
             this.getShareSites();
-        }
-
-        getShareSites(): void {
-
-            this.shareSiteList = this.sharingService.getShareSites();
         }
     }
 

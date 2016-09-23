@@ -8,7 +8,7 @@ var app;
                 this.getShareSites();
             }
             ShareController.prototype.getShareSites = function () {
-                this.shareSiteList = this.sharingService.getShareSites();
+                this.shareSiteList = this.sharingService.getShareSites(); // Reference .shareSiteList to get the collection
             };
             //Inject the service!
             ShareController.$inject = ["app.services.ShareService"];

@@ -1,7 +1,15 @@
-﻿<div>
+﻿<!-- View for the share buttons -->
+<div ng-repeat="share in ShareController.shareSiteList">
 
-    <div ng-repeat="share in ShareController.shareSiteList">
-        {{share.provider}}
-    </div>
-    
+    <!-- Buttons are stacking from the right. The Share url can be the current/absolute path -->
+    <button class="custom-btn pull-right" 
+            socialshare
+            socialshare-provider="{{share.provider}}"
+            socialshare-text="On Live Arena!"
+            socialshare-hashtags="LiveArena"
+            socialshare-url="http://livearena.com">
+        <span class="fa fa-2x {{share.imgUrl}} {{share.color}}"></span>
+
+    </button>
 </div>
+<!--socialshare-url="{{ $location.absUrl() }}">-->

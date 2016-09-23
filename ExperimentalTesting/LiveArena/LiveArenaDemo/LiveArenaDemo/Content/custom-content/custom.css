@@ -1,4 +1,53 @@
-﻿.Item-Content {
+﻿/* SelectionList view */
+
+.thumbNailHeaderLine {
+  margin-top: 5px;
+}
+
+.thumbNailHeaderLine h5 {
+    color: #656565;
+    text-transform: uppercase;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+.eventItemThumbnailTitle {
+  color: #303030;
+  font-weight: 600;
+  font-size: 10pt;
+  line-height: 1.4;
+}
+
+.eventItemThumbnailDate {
+  color: #686868;
+  font-weight: 400;
+  font-size: 8pt;
+  line-height: 1.0;
+}
+
+.eventItemThumbnailLink {
+  color: #686868;
+  font-weight: 400;
+  font-size: 8pt;
+  line-height: 1.0;
+}
+
+.eventItemThumbnailContainer {
+  text-align: center;
+  line-height: 1em;
+  /*font-size: 0.85em;*/
+  margin: 0px 0px 10px 0px;
+  /*max-width: 230px;*/
+}
+
+.eventItemThumbnailContainer > figure {
+    margin-bottom: 5px;
+    /*width: 230px;*/
+}
+
+/* End - SelectionList view */
+
+.Item-Content {
     width:20%;
     float:left; /* display: inline-block; */
     min-width:100px; /* equal to the width of the image */
@@ -9,23 +58,4 @@
 
 }
 
-.item-description {
-    margin-top: 3px;
-    font-size: 11px;
-    text-align: left;
-    color: dimgrey;
-}
 
-.item-datetime {
-    margin-top: -10px;
-    font-size: 10px;
-    text-align: left;
-    color: darkslategrey;
-}
-
-.item-publisher {
-    margin-top: -10px;
-    font-size: 10px;
-    text-align: left;
-    color: darkslategrey;
-}

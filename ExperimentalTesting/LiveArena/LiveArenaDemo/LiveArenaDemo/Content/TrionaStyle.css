@@ -1,0 +1,904 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    /*padding-bottom: 20px;*/
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+figure img {
+    width: 100% !important;
+}
+
+.pixelated {
+    image-rendering: optimizeSpeed; /* Legal fallback */
+    image-rendering: -moz-crisp-edges; /* Firefox        */
+    image-rendering: -o-crisp-edges; /* Opera          */
+    image-rendering: -webkit-optimize-contrast; /* Safari         */
+    image-rendering: optimize-contrast; /* CSS3 Proposed  */
+    image-rendering: crisp-edges; /* CSS4 Proposed  */
+    image-rendering: pixelated; /* CSS4 Proposed  */
+    -ms-interpolation-mode: nearest-neighbor; /* IE8+           */
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    /*max-width: 280px;*/
+}
+
+/* Overriding some bootstrap font sizes due to LA-design specs*/
+
+.h1 {
+    /*font-size: 39px;*/
+    font-size: 26pt;
+}
+
+h2,
+.h2 {
+    /*font-size: 32px;*/
+    font-size: 14pt;
+}
+
+p {
+    font-size: 11pt;
+    /* TODO: Check how we can use open sans semibold in some manner...*/
+    /*font-weight: 500;*/
+}
+
+
+
+
+/***********************************************************/
+/* Owl Carousel Styling */
+/***********************************************************/
+
+/*owl-dots*/
+/*.owl-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -27px;
+}
+.owl-dot {
+    background: #fff;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border-radius: 6px;
+    cursor: pointer;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+.owl-dot.active {
+    background: #333;
+}*/
+
+.owl-nav {
+    /*display:block !important;
+    background-color:black !important;
+    border: solid 1px red !important;
+    height: 100px !important;*/
+}
+
+.owl-prev {
+    position: absolute;
+    left: 0px;
+    /*border: solid 1px red;*/
+}
+
+.owl-next {
+    position: absolute;
+    right: 0px;
+    /*
+  right: -2px;
+  width: 30px;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+  */
+    /*border: solid 1px red;*/
+}
+
+.carouselLeftArrow {
+    padding-left: 6px;
+}
+
+.carouselRightArrow {
+    padding-right: 6px;
+}
+
+/*.fa {
+  font-size: 80px;
+  color: #fff;
+}*/
+
+.carouselFigure {
+    border: solid;
+    border-width: 1px;
+    border-color: #eeeeee;
+    position: relative;
+}
+
+    /*
+.carouselFigure img {
+  height: 130px !important;
+}
+ */
+
+    .carouselFigure .eventItemThumbnailPlayIcon:hover {
+        opacity: 0.5 !important;
+    }
+
+
+/***********************************************************/
+/* Nav bar */
+/***********************************************************/
+
+/* Navigational top bar */
+.navbar-fixed-top {
+    height: auto;
+    background-color: #ffffff;
+}
+
+/* The entire nav row*/
+.navbar .container .row {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+/* Normal menu links*/
+/*.navbar-nav > li > a {
+  padding: 18px 15px;
+}*/
+
+
+.navbar-header {
+    /*min-width: 330px !important;*/
+}
+
+.navbar-toggle {
+    /*background-color: red !important;*/
+    padding-top: 20px;
+}
+
+.icon-bar {
+    /*
+  display: block !important;
+  */
+    /*
+  color: black !important;
+  border: solid 2px black;
+  border-radius: 5px !important;
+    */
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 28px;
+    height: 4px;
+    background-color: #444444;
+    border-radius: 2px;
+}
+/*Navigation header image*/
+.navbar-brand {
+    margin: 0px 20px 0px 0px !important;
+    padding: 5px 0px 0px 0px !important;
+    height: auto !important;
+}
+
+    .navbar-brand img {
+        max-width: 250px !important;
+        max-height: 70px !important;
+        -ms-interpolation-mode: bicubic;
+    }
+
+
+@media (min-width: 400px) {
+    .navbar-brand img {
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+#navbarSearchContainer {
+    float: left;
+}
+
+.navbarSearchContainer, .navbarSearchContainer form, .navbar-form {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.btn-searchBar {
+}
+
+
+/* New bootstrap cssing */
+
+#navItemsContainerFull {
+    /*position: absolute;*/
+    margin-right: 15px;
+    float: left;
+    font-size: 1.1em;
+    padding-top: 15px;
+}
+
+.navbar-nav > li {
+    margin: 12px 2px 2px 2px;
+}
+
+.navbar-nav .dropdown-menu li:hover {
+    background-color: #35a6de;
+    color: white;
+    cursor: pointer;
+}
+
+
+.navbar-nav > li > .dropdown-menu {
+    padding: 8px !important;
+}
+
+#menuLoginContainer {
+    min-width: 300px;
+    padding: 15px 15px 0px 15px;
+    margin: 0px;
+}
+
+#menuLoginContainerMobile {
+    display: block;
+    padding: 15px 15px 0px 15px;
+    /*background-color:white !important;*/
+}
+
+    #menuLoginContainer > form,
+    #menuLoginContainerMobile > form {
+        padding: 0px;
+        margin: 0px;
+    }
+
+#forgotPasswordContainer {
+    margin: 0px 0px 8px 0px;
+}
+
+@media(max-width: 767px) {
+    .navbar-collapse {
+        /* TODO: Temporary set to transparent to get rid of grey line originating from original bootstrap.css*/
+        border-top-color: transparent;
+    }
+
+    .navbar ul {
+        background-color: white !important;
+        /*border-right: solid 1px #cccccc;
+        border-left: solid 1px #cccccc;
+        border-bottom: solid 1px #cccccc;*/
+        /*border-radius: 5px;*/
+    }
+
+        .navbar ul > li a {
+            display: block;
+            padding: 15px 29px 5px 29px;
+        }
+
+    .navbar ul {
+        display: block;
+    }
+
+    .mobileSearchSubContainer {
+        /*padding: 10px 20px 30px 20px;*/
+        padding: 0px 10px 5px 10px;
+    }
+
+    .mobileSubContainer {
+        font-size: 1.05em;
+        color: #555555;
+        padding: 0px 0px 0px 10px;
+    }
+
+    #navItemsContainerMobile {
+        font-size: 1.1em;
+        float: none;
+        /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.176);*/
+        box-shadow: -5px 6px 10px rgba(0, 0, 0, 0.046), 5px 7px 10px rgba(0, 0, 0, 0.096);
+    }
+
+        #navItemsContainerMobile li:hover {
+            cursor: pointer;
+        }
+
+    .navbar-collapse.in {
+        overflow-y: initial !important;
+    }
+}
+
+/* General drop down styling */
+
+.dropdown-menu {
+    /*padding: 10px;*/
+    margin-top: auto;
+    font-size: 1.0em;
+}
+
+    .dropdown-menu li {
+        padding: 5px 5px 5px 5px;
+    }
+
+    .dropdown-menu > li > a {
+        padding: 12px 35px 12px 15px !important;
+    }
+
+
+/***********************************************************/
+/* Various */
+/***********************************************************/
+
+
+
+#topSection {
+    margin: 0px 0px 0px 0px;
+}
+
+#descriptionSection {
+    margin: 0px 0px 0px 0px;
+}
+
+
+#mainPlayerContainer {
+    margin: 0px;
+    padding: 0px;
+    /*border: solid 1px black;*/
+}
+
+#mainInformationContainer {
+    margin: 0px 0px 0px 0px;
+    padding: 20px;
+    background-color: #e2e6e7;
+    vertical-align: top;
+}
+
+    #mainInformationContainer h1 {
+        font-size: 20pt;
+        font-weight: 400;
+        margin: 0px 0px 2px 0px;
+        color: #404040;
+        padding: 2px;
+    }
+
+    #mainInformationContainer h2 {
+        font-size: 11pt;
+        color: #888888;
+        margin: 0px 0px 12px 0px;
+        padding: 2px;
+        font-weight: 400;
+    }
+
+    #mainInformationContainer p {
+        font-size: 0.9em;
+        color: #404040;
+        font-weight: 600;
+    }
+
+#mainInformationContainerSmall {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+
+#mainInformationContainerSmallInner {
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+#mainInformationContainerSmall h1 {
+    font-size: 22px;
+    margin: 5px 0px 0px 0px;
+    padding: 2px;
+    font-weight: 400;
+    color: #333333 !important;
+}
+
+#mainInformationContainerSmall h2 {
+    font-size: 16px;
+    color: #666666 !important;
+    margin: 5px 0px 0px 0px;
+    padding: 2px;
+}
+
+.cookieMessage {
+    width: 100% !important;
+    margin-top: 0 !important;
+    background-color: #35a6de;
+    position: absolute;
+    z-index: 2000;
+}
+
+.cookieMessageText {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: white;
+}
+
+.cookieMessageTextLink {
+    color: white;
+    text-decoration: underline;
+}
+
+.cookieMessageText :hover {
+    color: #d3d3d3;
+}
+
+.cookieMessageTextLink:visited {
+    color: white;
+}
+
+
+.webkit #mainInformationContainerSmall h2 {
+    color: #333333 !important;
+}
+
+.thumbNailHeaderLine {
+    margin-top: 5px;
+}
+
+    .thumbNailHeaderLine h5 {
+        color: #656565;
+        text-transform: uppercase;
+        font-size: 11pt;
+        font-weight: 600;
+    }
+
+
+.eventItemThumbnailContainer {
+    text-align: center;
+    line-height: 1em;
+    /*font-size: 0.85em;*/
+    margin: 0px 0px 10px 0px;
+    /*max-width: 230px;*/
+}
+
+    .eventItemThumbnailContainer > figure {
+        margin-bottom: 5px;
+        /*width: 230px;*/
+    }
+
+/* TODO: Remove this... */
+.eventItemHighlightIcon {
+    margin-bottom: 3px !important;
+    margin-right: 3px !important;
+    /*display: inline !important;*/
+    width: 23px !important;
+}
+
+
+
+/* The code below is for an upcoming design change*/
+
+
+.channelItemHighlightContainer,
+.eventItemHighlightContainerLive,
+.eventItemHighlightContainerUpcoming {
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    color: white;
+    font-size: 0.7em;
+    font-weight: 400;
+    padding: 1px 5px 1px 5px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.20);
+    letter-spacing: 0.15em;
+}
+
+.channelItemHighlightContainer {
+    background-color: #5fb44d;
+}
+
+.eventItemHighlightContainerLive {
+    background-color: #e65397;
+}
+
+.eventItemHighlightContainerUpcoming {
+    background-color: #35a6de;
+}
+
+
+
+.eventItemThumbnailTitle {
+    color: #303030;
+    font-weight: 600;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+.eventItemThumbnailDate {
+    color: #686868;
+    font-weight: 400;
+    font-size: 8pt;
+    line-height: 1.0;
+}
+
+.eventItemThumbnailLink {
+    color: #686868;
+    font-weight: 400;
+    font-size: 8pt;
+    line-height: 1.0;
+}
+
+.eventItemThumbnailTitle {
+    /*border: solid 1px green;*/
+}
+
+.eventItemTextContentContainer {
+    /*border: solid 1px blue;*/
+    /*max-width: 100px;*/
+}
+
+    .eventItemTextContentContainer div {
+        /*
+  max-width:100px;
+  */
+    }
+
+.topFloatingAlertViewContainer {
+    background: rgba(255, 153, 51, 1);
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+}
+
+/* Channel ""ticker" */
+#channelEventLabel {
+    font-size: 11pt;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+}
+
+.channelEventPreInfo {
+    padding: 0px 5px 0px 0px;
+    color: #979797;
+}
+
+.channelEventNowPlayingText {
+    margin-bottom: 8px;
+    height: 20px;
+}
+
+.channelEventTimeIndicator {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.channelDesc {
+    cursor: pointer;
+    padding: 0px 3px 0px 0px;
+    color: #646464;
+    font-weight: 600;
+}
+
+.channelContentTitle, .channelContentDescription {
+    font-size: 11pt;
+    color: #111111 !important;
+}
+
+.channelContentDescription {
+    clear: both;
+    padding-top: 10px;
+}
+
+    #currentEventDescription, .channelContentDescription p {
+        font-size: 0.95em !important;
+        font-weight: 400 !important;
+        color: #111111 !important;
+    }
+
+
+.laSpinner {
+    color: #35a6de;
+}
+
+
+/* Event purchase styling */
+
+.eventPurchaseOuterContainer {
+    display: table;
+    height: 100%;
+    width: 100%;
+    background-attachment: initial;
+    background-color: initial;
+    background-size: contain !important;
+    background-origin: initial;
+    background-clip: initial;
+    background-position: initial;
+    background-repeat: no-repeat;
+}
+
+    .eventPurchaseOuterContainer > div {
+        display: table-cell;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 1.0em;
+        color: white;
+    }
+
+.buyCircle {
+    width: 122px;
+    height: 122px;
+    background: #69c254;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    border-radius: 200px;
+    display: inline-block;
+    box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+    .buyCircle > div {
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+
+        .buyCircle > div > div {
+            display: table-cell;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+/***********************************************************/
+/* Search styling */
+/***********************************************************/
+
+.navbar-collapse form[role="search"] {
+    /*position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 100%;
+		padding: 0px;
+		margin: 0px;
+		z-index: 0;*/
+}
+
+    .navbar-collapse form[role="search"] button,
+    .navbar-collapse form[role="search"] input {
+        padding: 6px 12px 3px 12px;
+        border-radius: 0px;
+        border-width: 0px;
+        color: #ffffff;
+        /*background-color: #e84f94;*/
+        /*background-color: #94c123;*/
+        background-color: #32a6df;
+        border-color: #ffffff;
+        box-shadow: none;
+        outline: none;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+.webkit .navbar-collapse form[role="search"] button {
+    padding: 6px 12px 4px 12px;
+}
+
+.navbar-collapse form[role="search"] input {
+    /*padding: 16px 12px;*/
+    /*font-style: italic;*/
+    font-style: normal;
+    padding-bottom: 7px;
+    height: 32px;
+    font-size: 1em;
+    background-color: #e2e6e7;
+    color: #666666;
+    box-shadow: none;
+}
+
+
+
+
+
+/***********************************************************/
+/* css hacks to fix ""same height on every column in a row""-thingy
+/* TODO: Move the section below into a separate css file       
+/***********************************************************/
+
+/* columns of same height styles */
+.row-full-height {
+    height: 100%;
+}
+
+.col-full-height {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.row-same-height {
+    display: table;
+    width: 100%;
+    /* fix overflow */
+    /*table-layout: fixed;*/
+}
+
+.col-xs-height {
+    display: table-cell;
+    float: none !important;
+}
+
+@media (min-width: 768px) {
+    .col-sm-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+
+/***********************************************************/
+
+
+.marqueeOuterWrap {
+    z-index: 255 !important;
+}
+
+.marqueeInnerWrap {
+    z-index: 255 !important;
+}
+
+
+/*Spinner styling*/
+/*Absolute Center Spinner*/
+.loading {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: visible;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+    /*Transparent Overlay*/
+    .loading:before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255,255,255,0.6);
+    }
+
+
+
+/* Some general button styling */
+.btn-tab, .btn-tab-toolbar {
+    background-color: #35a6de;
+    color: white;
+}
+
+    .btn-tab-toolbar:hover {
+        background-color: rgba(53, 166, 222, 0.7);
+        color: white;
+    }
+
+.btn-tab {
+    /*text-transform: uppercase;*/
+    /*padding: 5px 20px 5px 20px;*/
+    font-size: 0.9em;
+}
+
+.btn-tab-toolbar {
+    /*padding: 2px;*/
+    font-size: 15px;
+}
+
+.btn-tab:hover {
+    background-color: rgba(53, 166, 222, 0.7);
+    color: white;
+}
+
+.btn-tab-fixedwidth {
+    /*border: solid 1px green;*/
+    width: 100%;
+}
+
+.btn-tab-fullwidth {
+    width: 100%;
+}
+
+.btn-tab:active, .btn-tab.active {
+    background-color: #075d7e !important;
+}
+
+.btn-offer {
+    border-radius: 4px;
+    font-size: 1.3em;
+    box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.2);
+    font-weight: 400 !important;
+}
+
+    .btn-offer:active {
+        position: relative;
+        top: 1px;
+        left: 1px;
+    }
+
+#tabButtonOuterContainerFull {
+    width: 800px !important;
+    display: block;
+    /*background-color: red !important;*/
+}
+
+#tabButtonOuterContainerSmall {
+    padding-left: 15px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+#tabButtonOuterContainerSmall {
+    width: 100%;
+}
+
+.tabButtonContainer {
+    width: 200px !important;
+    float: left;
+    padding: 0px 0px 0px 0px;
+}
+
+.tabButtonContainerSmall {
+    padding: 0px;
+}
+
+    .tabButtonContainerSmall:first-child {
+        /*padding-right: 16px;*/
+    }
+
+    .tabButtonContainerSmall:last-child {
+        /*padding-left: 16px;*/
+    }
+
+    .tabButtonContainer input[type="radio"],
+    .tabButtonContainerSmall input[type="radio"] {
+        /*visibility: hidden;*/
+        display: none;
+    }

@@ -9,5 +9,6 @@
     export interface IShareSite {
         provider: string;
         imgUrl: string;
+        color: string;
     }
 }
