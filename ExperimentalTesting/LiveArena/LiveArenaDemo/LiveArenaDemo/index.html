@@ -9,6 +9,7 @@
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <!-- Own Styles -->
     <link href="Content/helper.css" rel="stylesheet" />
+    <link href="Content/custom-content/custom.css" rel="stylesheet" />
 </head>
 
 <body ng-app="ShareDemo">
@@ -42,8 +43,15 @@
                         Share me
                     </a>
                     <h2>Angular share test</h2>
-                    <ng-view></ng-view>
+                    <ng-view>
+                        <!-- ItemDetail + share view -->
+                    </ng-view>
                 </div>
+            </div>
+            <div class="row">
+              <ng-include src="app/views/SelectionList.html">
+
+              </ng-include>
             </div>
         </div>
     </div>
@@ -64,5 +72,6 @@
     <!-- Share-Feature -->
     <script src="app/services/ShareService.js"></script>
     <script src="app/controllers/ShareController.js"></script>
+
 </body>
 </html>
