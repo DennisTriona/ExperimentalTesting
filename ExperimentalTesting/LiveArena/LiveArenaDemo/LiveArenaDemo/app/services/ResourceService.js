@@ -6,16 +6,16 @@ var app;
         var ResourceService = (function () {
             function ResourceService() {
                 this.selectionItems = [
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
-                    { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
+                    { id: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
+                    { id: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
+                    { id: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
+                    { id: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
+                    { id: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
+                    { id: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
+                    { id: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
+                    { id: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA", imgUrl: "http://www.codeodor.com/images/Empty_set.png" },
                 ];
-                this.dummyItem = { id: 0, description: "No selection-item found", date: "00-00-0000", imgUrl: "http://www.codeodor.com/images/Empty_set.png" };
+                this.dummyItem = { id: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA", imgUrl: "http://www.codeodor.com/images/Empty_set.png" };
             }
             ResourceService.prototype.getSelectionItems = function () {
                 return this.selectionItems;

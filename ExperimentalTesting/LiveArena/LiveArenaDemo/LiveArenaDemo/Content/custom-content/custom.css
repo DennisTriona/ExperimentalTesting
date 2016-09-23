@@ -1,0 +1,31 @@
+﻿.Item-Content {
+    width:20%;
+    float:left; /* display: inline-block; */
+    min-width:100px; /* equal to the width of the image */
+    text-align:center;
+}
+
+.item-image {
+
+}
+
+.item-description {
+    margin-top: 3px;
+    font-size: 11px;
+    text-align: left;
+    color: dimgrey;
+}
+
+.item-datetime {
+    margin-top: -10px;
+    font-size: 10px;
+    text-align: left;
+    color: darkslategrey;
+}
+
+.item-publisher {
+    margin-top: -10px;
+    font-size: 10px;
+    text-align: left;
+    color: darkslategrey;
+}

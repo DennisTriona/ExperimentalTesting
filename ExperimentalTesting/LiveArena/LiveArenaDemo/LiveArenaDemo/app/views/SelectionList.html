@@ -1,0 +1,19 @@
+﻿<ul ng-controller="app.controllers.SelectController as selectCtrl" align="center">
+    <li class="Item-Content" ng-repeat="item in selectCtrl.resourceList"
+        style="width:20%; height:auto;margin-top:20px;margin-right:10px">
+        <!-- Image -->
+        <img ng-src="{{item.imgUrl}}" style="height:116px;width:205px" />
+        <!-- Description -->
+        <div class="item-description">
+            <b>{{item.description}}</b>
+        </div>
+        <!-- Date -->
+        <div class="item-datetime">
+            {{item.date}}
+        </div>
+        <!-- Publisher -->
+        <div class="item-publisher">
+            <b>{{item.publisher}}</b>
+        </div>
+    </li>
+</ul>
