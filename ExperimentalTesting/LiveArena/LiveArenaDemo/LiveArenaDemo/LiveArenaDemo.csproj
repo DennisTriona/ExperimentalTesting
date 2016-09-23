@@ -41,6 +41,13 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
+    <Content Include="node_modules\bootstrap-block-grid\demo\index.html" />
+    <Content Include="node_modules\bootstrap-block-grid\demo\style.css" />
+    <Content Include="node_modules\bootstrap-block-grid\dist\bootstrap3-block-grid.css" />
+    <Content Include="node_modules\bootstrap-block-grid\dist\bootstrap3-block-grid.min.css" />
+    <Content Include="node_modules\bootstrap-block-grid\dist\bootstrap4-block-grid.css" />
+    <Content Include="node_modules\bootstrap-block-grid\dist\bootstrap4-block-grid.min.css" />
+    <Content Include="node_modules\bootstrap-block-grid\Gruntfile.js" />
     <Content Include="Scripts\jasmine\boot.js" />
     <Content Include="Scripts\jasmine\console.js" />
     <Content Include="Scripts\jasmine\jasmine-html.js" />
@@ -67,6 +74,16 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="node_modules\bootstrap-block-grid\.npmignore" />
+    <Content Include="node_modules\bootstrap-block-grid\bower.json" />
+    <Content Include="node_modules\bootstrap-block-grid\LICENSE" />
+    <Content Include="node_modules\bootstrap-block-grid\package.json" />
+    <Content Include="node_modules\bootstrap-block-grid\README.md" />
+    <Content Include="node_modules\bootstrap-block-grid\src\bootstrap3-block-grid.scss" />
+    <Content Include="node_modules\bootstrap-block-grid\src\bootstrap4-block-grid.scss" />
+    <Content Include="node_modules\bootstrap-block-grid\src\_bootstrap.gridblock.scss" />
+    <Content Include="node_modules\bootstrap-block-grid\src\_bootstrap3.breakpoints.scss" />
+    <Content Include="node_modules\bootstrap-block-grid\src\_bootstrap4.breakpoints.scss" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -112,9 +129,7 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="node_modules\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>

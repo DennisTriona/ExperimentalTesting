@@ -12,24 +12,26 @@
 }
 
 .eventItemThumbnailTitle {
-  color: #303030;
+  color: #656565;
   font-weight: 600;
   font-size: 10pt;
   line-height: 1.4;
 }
 
 .eventItemThumbnailDate {
-  color: #686868;
+  color: #939393;
   font-weight: 400;
   font-size: 8pt;
   line-height: 1.0;
+  margin-top: 3px;
 }
 
 .eventItemThumbnailLink {
-  color: #686868;
+  color: #939393;
   font-weight: 400;
   font-size: 8pt;
   line-height: 1.0;
+  margin-top: 3px
 }
 
 .eventItemThumbnailContainer {
@@ -50,7 +52,7 @@
 .Item-Content {
     width:20%;
     float:left; /* display: inline-block; */
-    min-width:100px; /* equal to the width of the image */
+    /*min-width:100px; /* equal to the width of the image */
     text-align:center;
 }
 
