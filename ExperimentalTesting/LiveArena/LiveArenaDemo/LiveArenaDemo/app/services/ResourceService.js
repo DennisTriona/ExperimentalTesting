@@ -29,7 +29,7 @@ var app;
                 return this.dummyItem;
             };
             return ResourceService;
-        })();
+        }());
         services.ResourceService = ResourceService;
         angular.module("ShareDemo").service("app.services.ResourceService", ResourceService);
     })(services = app.services || (app.services = {}));

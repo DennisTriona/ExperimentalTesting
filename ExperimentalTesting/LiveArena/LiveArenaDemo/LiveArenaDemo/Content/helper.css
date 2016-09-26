@@ -4,15 +4,26 @@
     background-color: #E2E6E7;
 }
 
+.bannerImage {
+    margin: auto auto 2% auto;
+}
+
 .capitalize {
     text-transform: capitalize;
 }
 
 .element-container {
-    height: 270px;
+    height: 250px;
     width: 480px;
 }
 
+.bottom-align {
+   position:absolute; 
+   margin-left:-100px;
+   left:50%;
+   width:180px;
+   bottom:0px;
+}
 /*--- SETTINGS ---*/
 * {
     font-size: 13.5px;
@@ -264,6 +275,7 @@ button {
 .color-lightgrey {
     color: #888;
 }
+
 .color-white {
     color: #fff;
 }

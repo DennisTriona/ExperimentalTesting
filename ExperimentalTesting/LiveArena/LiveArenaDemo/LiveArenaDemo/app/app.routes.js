@@ -4,12 +4,7 @@ var app;
         function Routes() {
         }
         Routes.configureRoutes = function ($routeProvider) {
-            // TODO: Create a Directive
-            $routeProvider.when("/home", {
-                controller: "app.controllers.ShareController",
-                templateUrl: "/app/views/Share.html",
-                controllerAs: "ShareController"
-            }); // Add a New route with a New controller.
+            // Add a New route with a New controller.
             $routeProvider.when("/ItemDetail/:itemID", {
                 controller: "app.controllers.ItemDetailController",
                 templateUrl: "app/views/ItemDetails.html",
@@ -20,7 +15,7 @@ var app;
         // Class that manages all the routing
         Routes.$inject = ["$routeProvider"];
         return Routes;
-    })();
+    }());
     app.Routes = Routes;
 })(app || (app = {}));
 //# sourceMappingURL=app.routes.js.map
