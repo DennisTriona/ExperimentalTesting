@@ -6,6 +6,7 @@
         description: string;    // description: description of the item
         date: string;           // date: date of time the item will be displayed. 
         publisher: string;      // publisher: the publisher of the content.               
-        imgUrl: string;         // imgUrl: a url-directive for the image. 
+        thumbnail_imgUrl: string;    // imgUrl: a url-directive for the image. 
+        display_imgUrl: string;
     }
 }
