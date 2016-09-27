@@ -22,6 +22,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\nothing\views\nothingReferences.html" />
     <Content Include="app\views\ItemDetails.html" />
     <Content Include="app\views\SelectionList.html" />
     <Content Include="app\views\Share.html" />
@@ -117,6 +118,19 @@
     <TypeScriptCompile Include="app\interfaces\ISelectItemParams.ts" />
     <TypeScriptCompile Include="app\interfaces\IResourceService.ts" />
     <TypeScriptCompile Include="app\interfaces\IShare.ts" />
+    <TypeScriptCompile Include="app\nothing\common\EventDispatcher.ts" />
+    <TypeScriptCompile Include="app\nothing\controllers\GameController.ts" />
+    <TypeScriptCompile Include="app\nothing\interfaces\IEvent.ts" />
+    <TypeScriptCompile Include="app\nothing\interfaces\IGameArea.ts" />
+    <TypeScriptCompile Include="app\nothing\objects\AIPaddle.ts" />
+    <TypeScriptCompile Include="app\nothing\objects\Ball.ts" />
+    <TypeScriptCompile Include="app\nothing\objects\Border.ts" />
+    <TypeScriptCompile Include="app\nothing\objects\Paddle.ts" />
+    <TypeScriptCompile Include="app\nothing\objects\PlayerPaddle.ts" />
+    <TypeScriptCompile Include="app\nothing\objects\Rectangle.ts" />
+    <TypeScriptCompile Include="app\nothing\objects\ScoreManager.ts" />
+    <TypeScriptCompile Include="app\nothing\services\GameService.ts" />
+    <Content Include="app\nothing\views\nothingView.html" />
     <TypeScriptCompile Include="app\services\ResourceService.ts" />
     <TypeScriptCompile Include="app\services\ShareService.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
