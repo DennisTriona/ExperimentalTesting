@@ -25,16 +25,19 @@
             <li role="presentation"><a href="#">Bacon</a></li>
         </ul>
     </nav>
-    <div class="container-fluid">
-        <img src="Content/images/LiveArenaLogo.jpg"/>
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html"> <img src="Content/images/LiveArenaLogo.jpg" /></a>
+        </nav>
+        <img class="bannerImage" src="https://bcstatic.blob.core.windows.net/play-site-images/600b62e2-ab1f-44e6-de57-280e56396d19-LiveArenaHockey_Banner2.jpg?sv=2014-02-14&sr=c&si=play-site-images&sig=UDp4nJ6iZAyz9R0M7qIG8Qs865OEXHFZUzyixC8ELnU%3D"/>
         <div class="container">
             <div class="row">
                 <ng-view>
                     <!-- Item Detail view -->
                 </ng-view>
             </div>
-            <div class="row" style="margin-top:25px">
-              <ng-include class="ng-scope" src="'app/views/SelectionList.html'"></ng-include>
+            <div class="row" style="margin-top: 25px">
+                <ng-include class="ng-scope" src="'app/views/SelectionList.html'"></ng-include>
             </div>
             <div class="row" style="margin-top:25px">
                 <ng-include class="ng-scope" src="'app/nothing/views/nothingView.html'"></ng-include>
