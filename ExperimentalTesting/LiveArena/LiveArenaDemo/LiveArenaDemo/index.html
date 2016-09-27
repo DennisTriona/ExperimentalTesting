@@ -26,7 +26,7 @@
         </ul>
     </nav>
     <div class="container-fluid">
-        <img src="Content/images/LiveArenaLogo.jpg" />
+        <img src="Content/images/LiveArenaLogo.jpg"/>
         <div class="container">
             <div class="row">
                 <ng-view>
@@ -35,6 +35,9 @@
             </div>
             <div class="row" style="margin-top:25px">
               <ng-include class="ng-scope" src="'app/views/SelectionList.html'"></ng-include>
+            </div>
+            <div class="row" style="margin-top:25px">
+                <ng-include class="ng-scope" src="'app/nothing/views/nothingView.html'"></ng-include>
             </div>
         </div>
     </div>
@@ -58,5 +61,15 @@
 
     <script src="app/directives/ShareDirective.js"></script>
     <script src="app/directives/DateDirective.js"></script>
+
+    <!-- nothing -->
+    <script src="app/nothing/objects/Rectangle.js"></script>
+    <script src="app/nothing/objects/Border.js"></script>
+    <script src="app/nothing/objects/Ball.js"></script>
+    <script src="app/nothing/objects/Paddle.js"></script>
+    <script src="app/nothing/objects/PlayerPaddle.js"></script>
+    <script src="app/nothing/objects/AIPaddle.js"></script>
+    <script src="app/nothing/services/GameService.js"></script>
+    <script src="app/nothing/controllers/GameController.js"></script>
 </body>
 </html>
