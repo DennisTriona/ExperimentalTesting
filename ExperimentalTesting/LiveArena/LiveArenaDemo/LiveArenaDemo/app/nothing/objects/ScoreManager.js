@@ -9,10 +9,11 @@ var app;
                 }
                 ScoreManager.prototype.DetectGoal = function (ball, border) {
                     // PlayerGoal Check
-                    if (ball.x - (ball.size / 2) - ball.lineWidth <= 0)
-                        // AI Goal Check
-                        if (ball.x + (ball.size / 2) + ball.lineWidth >= border.rectangle.width)
-                            ;
+                    if (ball.x - (ball.size / 2) - ball.lineWidth <= 0) {
+                    }
+                    // AI Goal Check
+                    if (ball.x + (ball.size / 2) + ball.lineWidth >= border.rectangle.width) {
+                    }
                 };
                 ScoreManager.prototype.AIScored = function () {
                     this.AIScore++;
@@ -21,7 +22,7 @@ var app;
                     this.PlayerScore++;
                 };
                 return ScoreManager;
-            })();
+            }());
             objects.ScoreManager = ScoreManager;
         })(objects = nothing.objects || (nothing.objects = {}));
     })(nothing = app.nothing || (app.nothing = {}));

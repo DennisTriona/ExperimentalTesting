@@ -42,9 +42,9 @@ var app;
                     // init Ball
                     this.ball = new app.nothing.objects.Ball(400, 400, 1, 1, 8, "red", 10, 5);
                     // init Paddle - player
-                    this.paddlePlayer = new app.nothing.objects.PlayerPaddle(1280 - 25, 720 / 2, 15, 80, 8);
+                    this.paddlePlayer = new app.nothing.objects.PlayerPaddle(1280 - 25, 720 / 2, 15, 80, 20);
                     // init Paddle - AI 
-                    this.paddleAI = new app.nothing.objects.AIPaddle(10, 720 / 2, 15, 80, 8, 5);
+                    this.paddleAI = new app.nothing.objects.AIPaddle(10, 720 / 2, 15, 80, 8, 100);
                     // init Border
                     this.border = new app.nothing.objects.Border(0, 0, 1280, 720);
                     // event setup
@@ -119,7 +119,7 @@ var app;
                     this.ball.ResetPosition(this.border.rectangle.width / 2, this.border.rectangle.height / 2);
                 };
                 return GameService;
-            })();
+            }());
             services.GameService = GameService;
             angular.module("ShareDemo").service("app.nothing.services.GameService", GameService);
         })(services = nothing.services || (nothing.services = {}));

@@ -4,8 +4,8 @@
         humanError: number // Basically difficulty
 
         // Current Destination
-        destination: number
-        destinationX: number
+        destination: number;
+        destinationX: number;
 
         constructor(x: number, y: number, width: number, height: number, speed: number, humanError: number) {
             super(x, y, width, height, speed);

@@ -19,7 +19,7 @@ var app;
                     ctx.fillRect(this._rectangle.x, this._rectangle.y, this._rectangle.width, this._rectangle.height);
                 };
                 return Paddle;
-            })();
+            }());
             objects.Paddle = Paddle;
         })(objects = nothing.objects || (nothing.objects = {}));
     })(nothing = app.nothing || (app.nothing = {}));
