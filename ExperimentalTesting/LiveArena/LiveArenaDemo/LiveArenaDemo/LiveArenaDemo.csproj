@@ -36,8 +36,6 @@
     <Content Include="Content\helper.css" />
     <Content Include="Content\images\LiveArenaLogo.jpg" />
     <Content Include="Content\images\SAIK.jpg" />
-    <Content Include="Content\jasmine\jasmine.css" />
-    <Content Include="Content\jasmine\jasmine_favicon.png" />
     <Content Include="Content\TrionaStyle.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -49,10 +47,6 @@
     <Content Include="node_modules\bootstrap-block-grid\dist\bootstrap4-block-grid.css" />
     <Content Include="node_modules\bootstrap-block-grid\dist\bootstrap4-block-grid.min.css" />
     <Content Include="node_modules\bootstrap-block-grid\Gruntfile.js" />
-    <Content Include="Scripts\jasmine\boot.js" />
-    <Content Include="Scripts\jasmine\console.js" />
-    <Content Include="Scripts\jasmine\jasmine-html.js" />
-    <Content Include="Scripts\jasmine\jasmine.js" />
     <Content Include="Scripts\socialshare\angular-socialshare.js" />
     <Content Include="Scripts\socialshare\angular-socialshare.min.js" />
     <Content Include="Resources.txt" />
@@ -90,6 +84,14 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="SpecRunner.html" />
+    <Content Include="tests\jasmine-2.5.2\boot.js" />
+    <Content Include="tests\jasmine-2.5.2\console.js" />
+    <Content Include="tests\jasmine-2.5.2\jasmine-html.js" />
+    <Content Include="tests\jasmine-2.5.2\jasmine.css" />
+    <Content Include="tests\jasmine-2.5.2\jasmine.js" />
+    <Content Include="tests\jasmine-2.5.2\jasmine_favicon.png" />
+    <Content Include="tests\specs\shareservice.spec.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
