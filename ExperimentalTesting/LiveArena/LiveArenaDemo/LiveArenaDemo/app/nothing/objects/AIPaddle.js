@@ -9,6 +9,12 @@ var app;
     (function (nothing) {
         var objects;
         (function (objects) {
+            var States;
+            (function (States) {
+                States[States["idle"] = 1] = "idle";
+                States[States["Aiming"] = 2] = "Aiming";
+                States[States["Adjust"] = 3] = "Adjust";
+            })(States || (States = {}));
             var AIPaddle = (function (_super) {
                 __extends(AIPaddle, _super);
                 function AIPaddle(x, y, width, height, speed, humanError) {
@@ -50,7 +56,7 @@ var app;
                             simDirY *= -1;
                     }
                     // Add human error
-                    var random = Math.random() - 0.5;
+                    var random = (Math.random() - 0.5) * 100;
                     simY += random * this.humanError;
                     this.destination = simY + (ball.size / 2) + ball.lineWidth;
                     this.destinationX = simX;

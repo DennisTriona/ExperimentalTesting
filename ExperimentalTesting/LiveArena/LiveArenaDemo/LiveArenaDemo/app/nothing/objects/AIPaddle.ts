@@ -1,7 +1,14 @@
 ﻿module app.nothing.objects {
+    enum States {
+        idle = 1,
+        Aiming = 2,
+        Adjust = 3
+    }
 
     export class AIPaddle extends Paddle {
         humanError: number // Basically difficulty
+        state: States; 
+        lastBallRead: Ball;
 
         // Current Destination
         destination: number;
@@ -13,9 +20,11 @@
         }
 
         Update(): void {
+
             if (this.destination > this._rectangle.y + (this._rectangle.height / 2)) this.Move(1);
             if (this.destination < this._rectangle.y + (this._rectangle.height / 2)) this.Move(-1);
 
+ 
             super.Update();
         }
 
@@ -53,7 +62,7 @@
             }
 
             // Add human error
-            var random = Math.random() - 0.5;
+            var random = (Math.random() - 0.5) * 100;
             simY += random * this.humanError;
 
             this.destination = simY + (ball.size / 2) + ball.lineWidth;
