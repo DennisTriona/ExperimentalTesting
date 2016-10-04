@@ -10,7 +10,7 @@ var app;
             }
             SelectController.$inject = ["app.services.ResourceService"];
             return SelectController;
-        }());
+        })();
         angular.module("ShareDemo").controller("app.controllers.SelectController", SelectController);
     })(controllers = app.controllers || (app.controllers = {}));
 })(app || (app = {}));

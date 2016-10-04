@@ -15,7 +15,7 @@ var app;
                     _super.call(this, x, y, width, height, speed);
                 }
                 return PlayerPaddle;
-            }(objects.Paddle));
+            })(objects.Paddle);
             objects.PlayerPaddle = PlayerPaddle;
         })(objects = nothing.objects || (nothing.objects = {}));
     })(nothing = app.nothing || (app.nothing = {}));

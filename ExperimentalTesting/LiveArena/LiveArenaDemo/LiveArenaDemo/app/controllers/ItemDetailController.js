@@ -12,7 +12,7 @@ var app;
             }
             ItemDetailController.$inject = ["$routeParams", "app.services.ResourceService"];
             return ItemDetailController;
-        }());
+        })();
         angular.module("ShareDemo").controller("app.controllers.ItemDetailController", ItemDetailController);
     })(controllers = app.controllers || (app.controllers = {}));
 })(app || (app = {}));

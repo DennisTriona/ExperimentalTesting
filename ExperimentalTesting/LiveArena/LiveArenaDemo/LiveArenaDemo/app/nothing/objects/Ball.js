@@ -76,7 +76,7 @@ var app;
                     return false;
                 };
                 return Ball;
-            }());
+            })();
             objects.Ball = Ball;
         })(objects = nothing.objects || (nothing.objects = {}));
     })(nothing = app.nothing || (app.nothing = {}));
