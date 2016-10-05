@@ -1,12 +1,12 @@
 ﻿module app.interfaces {
 
-    // An interface describing an selection-item to be used in the LA-Share demo. 
+    // An Interface describing an selection-item to mimic functionality of the Live-Arena site.     
     export interface ISelectItem {
-        id: number;             // id: to distinguish different selection-items (used internally for routing)
-        description: string;    // description: description of the item
-        date: string;           // date: date of time the item will be displayed. 
-        publisher: string;      // publisher: the publisher of the content.               
-        thumbnail_imgUrl: string;    // imgUrl: a url-directive for the image. 
-        display_imgUrl: string;
+        itemID: number;             // An unique identification of this selection-item.
+        description: string;        // An description associated with this selection-item.
+        date: string;               // A Date associated with the event of this selection-item. 
+        publisher: string;          // A publisher associated with the event of this selection-item.             
+        thumbnail_imgUrl: string;   // A direct-Url describing the directory of the thumbnail-image of the selection-item.
+        display_imgUrl: string;     // A direct-url describing the directory of the image to display while the selection-item is selected. 
     }
 }

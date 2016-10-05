@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en">
-<head>
+<head prefix="og: http://ogp.me/ns#" >
     <meta charset="utf-8" />
     <title>LiveArena Demo</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
@@ -11,6 +11,13 @@
     <!-- Own Styles -->
     <link href="Content/helper.css" rel="stylesheet" />
     <link href="Content/custom-content/custom.css" rel="stylesheet" />
+
+    <!-- Meta Data Test -->
+    <meta property="og:title" content="The Rock" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+
 </head>
 
 <body ng-app="ShareDemo">
@@ -27,24 +34,21 @@
         <nav class="navbar">
             <a href="index.html"> <img src="Content/images/LiveArenaLogo.jpg" /></a>
         </nav>
-        <img class="bannerImage" src="https://bcstatic.blob.core.windows.net/play-site-images/600b62e2-ab1f-44e6-de57-280e56396d19-LiveArenaHockey_Banner2.jpg?sv=2014-02-14&sr=c&si=play-site-images&sig=UDp4nJ6iZAyz9R0M7qIG8Qs865OEXHFZUzyixC8ELnU%3D"/>
+        <img class="bannerImage" src="https://bcstatic.blob.core.windows.net/play-site-images/600b62e2-ab1f-44e6-de57-280e56396d19-LiveArenaHockey_Banner2.jpg?sv=2014-02-14&sr=c&si=play-site-images&sig=UDp4nJ6iZAyz9R0M7qIG8Qs865OEXHFZUzyixC8ELnU%3D" />
         <div class="container">
             <div class="row">
                 <ng-view>
                     <!-- Item Detail view -->
                 </ng-view>
             </div>
-            <div class="row" style="margin-top: 25px">
-                <ng-include class="ng-scope" src="'app/views/SelectionList.html'"></ng-include>
-            </div>
+            <item-selection></item-selection>
         </div>
     </div>
-
+ 
     <!-- Libraries -->
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-route.min.js"></script>
     <script src="Scripts/socialshare/angular-socialshare.js"></script>
-
     <!-- Base scripts -->
     <script src="app/app.routes.js"></script>
     <script src="app/app.module.js"></script>
@@ -56,9 +60,10 @@
     <!-- Share-Feature -->
     <script src="app/services/ShareService.js"></script>
     <script src="app/controllers/ShareController.js"></script>
-
+    <!-- Directives -->
     <script src="app/directives/ShareDirective.js"></script>
     <script src="app/directives/DateDirective.js"></script>
+    <script src="app/directives/SelectItemDirective.js"></script>
 
     <!-- nothing -->
     <script src="app/nothing/objects/Rectangle.js"></script>

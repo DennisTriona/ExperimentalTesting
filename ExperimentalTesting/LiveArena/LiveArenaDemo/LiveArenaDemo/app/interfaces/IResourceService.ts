@@ -1,10 +1,10 @@
 ﻿module app.interfaces {
     
-    // an interface that describes the framework of a service fetching collective data of selection-items. 
+    // An Interface describing the resource fetching/managing service for the selection-items.
     export interface IResourceService {
-        selectionItems: ISelectItem[];               // selectionItems: an array containing selection-items.
+        selectionItems: ISelectItem[];               // An Array containing selection-items.
 
-        getSelectionItems(): ISelectItem[];          // getSelectionItems: a function to fetch the array of selection-items.
-        getSelectionItem(id: number): ISelectItem;   // getSelectionItem: a function that returns the selection-item of a specified id. 
+        getSelectionItems(): ISelectItem[];          // A function to fetch the array of selection-items.
+        getSelectionItem(id: number): ISelectItem;   // A function to fetch a specific selection-item in the selection-item array. 
     }
 }
