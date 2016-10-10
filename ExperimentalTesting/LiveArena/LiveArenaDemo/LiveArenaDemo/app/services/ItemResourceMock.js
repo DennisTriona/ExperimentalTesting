@@ -1,15 +1,13 @@
-﻿module app.services {
-
-    // A Class to provide a service to fetch and manage selection-item resources. 
-    export class ResourceService implements app.interfaces.IResourceService {
-        
-        // An Array containing the available selection-items.
-        selectionItems: app.interfaces.ISelectItem[];
-        // A Dummy-Item representing a default 'empty' selection-item. 
-        dummyItem: app.interfaces.ISelectItem;
-
-        constructor() {
-            this.selectionItems = [
+var app;
+(function (app) {
+    var services;
+    (function (services) {
+        var mockResource = angular.module("itemResourceMock", ["ngMockE2E"]);
+        mockResource.run(function ($httpBackend) {
+            var items = [];
+            var item;
+            var dummyItem;
+            items = [
                 {
                     itemID: 0, description: "SDHL Linköping HC - HV 71", date: "24 sep. 2016 14:25", publisher: "by Linköping HC SDHL",
                     thumbnail_imgUrl: "https://bcstatic.azureedge.net/default-images/7028ac9a-32df-4b19-f005-3ae5d64ce919-c_22735_15142118_large_thumbnail.jpg?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D",
@@ -48,34 +46,17 @@
                 {
                     itemID: 7, description: "SDHL HV 71 - MODO Hockey", date: "1 okt. 2016 16:25", publisher: "by HV71 SDHL",
                     thumbnail_imgUrl: "https://bcstatic.azureedge.net/default-images/d1c747d2-8738-45e2-e413-106dc1f80da1-HV71_thumbnail.gif?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D",
-                    display_imgUrl: "https://bcstatic.blob.core.windows.net/default-images/0d8f063a-bf30-4502-92d9-bcf80ebd7333-HV71.gif?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D" 
-                }
+                    display_imgUrl: "https://bcstatic.blob.core.windows.net/default-images/0d8f063a-bf30-4502-92d9-bcf80ebd7333-HV71.gif?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D"
+                },
             ];
-
             this.dummyItem = {
-                itemID: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA",
+                id: 0, description: "No selection-item found", date: "00-00-0000", publisher: "LA",
                 thumbnail_imgUrl: "http://www.codeodor.com/images/Empty_set.png",
-                display_imgUrl: "http://www.codeodor.com/images/Empty_set.png" 
+                display_imgUrl: "http://www.codeodor.com/images/Empty_set.png"
             };
-        }    
-
-        // A function to fetch all selection-items. 
-        getSelectionItems(): app.interfaces.ISelectItem[] {
-            return this.selectionItems;
-        }
-        // A function to fetch a specific selection-item. 
-        getSelectionItem(id: number): app.interfaces.ISelectItem {
-            for (var i = 0; i < this.selectionItems.length; i++)
-            {
-                if (this.selectionItems[i].itemID == id)
-                {
-                    return this.selectionItems[i];
-                }
-            }
-
-            return this.dummyItem;
-        } 
-    }
-
-    angular.module("ShareDemo").service("app.services.ResourceService", ResourceService);
-}
+            // Pass through any requests for application files
+            $httpBackend.whenGET(/app/).passThrough();
+        });
+    })(services = app.services || (app.services = {}));
+})(app || (app = {}));
+//# sourceMappingURL=ItemResourceMock.js.map

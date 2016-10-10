@@ -12,7 +12,7 @@ var app;
                     this.height = height;
                 }
                 return Rectangle;
-            }());
+            })();
             objects.Rectangle = Rectangle;
         })(objects = nothing.objects || (nothing.objects = {}));
     })(nothing = app.nothing || (app.nothing = {}));

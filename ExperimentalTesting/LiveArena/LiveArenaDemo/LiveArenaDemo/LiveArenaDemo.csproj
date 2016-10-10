@@ -105,6 +105,7 @@
     <TypeScriptCompile Include="app\controllers\SelectController.ts" />
     <TypeScriptCompile Include="app\controllers\ShareController.ts" />
     <TypeScriptCompile Include="app\directives\DateDirective.ts" />
+    <TypeScriptCompile Include="app\directives\SelectItemDirective.ts" />
     <TypeScriptCompile Include="app\directives\ShareDirective.ts" />
     <TypeScriptCompile Include="app\interfaces\IMeta.ts" />
     <TypeScriptCompile Include="app\interfaces\ISelectItem.ts" />
@@ -124,6 +125,7 @@
     <TypeScriptCompile Include="app\nothing\objects\ScoreManager.ts" />
     <TypeScriptCompile Include="app\nothing\services\GameService.ts" />
     <Content Include="app\nothing\views\nothingView.html" />
+    <TypeScriptCompile Include="app\services\ItemResourceMock.ts" />
     <TypeScriptCompile Include="app\services\MetaService.ts" />
     <TypeScriptCompile Include="app\services\ResourceService.ts" />
     <TypeScriptCompile Include="app\services\ShareService.ts" />
