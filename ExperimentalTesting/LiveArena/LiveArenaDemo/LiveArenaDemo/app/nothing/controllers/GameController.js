@@ -16,7 +16,7 @@ var app;
                 };
                 GameController.$inject = ['app.nothing.services.GameService'];
                 return GameController;
-            })();
+            }());
             angular.module("ShareDemo").controller("app.nothing.controllers.GameController", GameController);
         })(controllers = nothing.controllers || (nothing.controllers = {}));
     })(nothing = app.nothing || (app.nothing = {}));

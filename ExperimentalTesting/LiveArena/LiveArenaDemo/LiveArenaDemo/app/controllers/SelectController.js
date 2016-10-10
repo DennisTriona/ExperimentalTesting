@@ -12,7 +12,7 @@ var app;
             // Dependency injection of the ResrouceManagingService. 
             SelectController.$inject = ["app.services.ResourceService"];
             return SelectController;
-        })();
+        }());
         controllers.SelectController = SelectController;
         angular.module("ShareDemo").controller("app.controllers.SelectController", SelectController);
     })(controllers = app.controllers || (app.controllers = {}));

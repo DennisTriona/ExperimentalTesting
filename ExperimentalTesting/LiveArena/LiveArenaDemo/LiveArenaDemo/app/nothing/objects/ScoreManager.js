@@ -22,7 +22,7 @@ var app;
                     this.PlayerScore++;
                 };
                 return ScoreManager;
-            })();
+            }());
             objects.ScoreManager = ScoreManager;
         })(objects = nothing.objects || (nothing.objects = {}));
     })(nothing = app.nothing || (app.nothing = {}));

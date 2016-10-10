@@ -62,7 +62,7 @@ var app;
                     this.destinationX = simX;
                 };
                 return AIPaddle;
-            })(objects.Paddle);
+            }(objects.Paddle));
             objects.AIPaddle = AIPaddle;
         })(objects = nothing.objects || (nothing.objects = {}));
     })(nothing = app.nothing || (app.nothing = {}));

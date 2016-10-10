@@ -72,6 +72,7 @@
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\TrueShareButtons\YammerTest.js" />
     <Content Include="SpecRunner.html" />
     <Content Include="tests\jasmine-2.5.2\boot.js" />
     <Content Include="tests\jasmine-2.5.2\console.js" />

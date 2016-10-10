@@ -26,7 +26,7 @@ var app;
                     ctx.stroke();
                 };
                 return Border;
-            })();
+            }());
             objects.Border = Border;
         })(objects = nothing.objects || (nothing.objects = {}));
     })(nothing = app.nothing || (app.nothing = {}));

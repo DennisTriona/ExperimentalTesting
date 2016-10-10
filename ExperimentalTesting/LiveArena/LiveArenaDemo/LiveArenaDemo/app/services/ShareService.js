@@ -10,16 +10,16 @@ var app;
             ShareService.prototype.getShareSites = function () {
                 var shareSites = [
                     //{ provider: "tumblr", imgUrl: "fa-tumblr-square", color: "color-tumblr" },
-                    { provider: "pinterest", imgUrl: "fa-pinterest-square", color: "color-pinterest-red" },
-                    { provider: "google", imgUrl: "fa-google-plus-square", color: "color-googleplus-red" },
-                    { provider: "linkedin", imgUrl: "fa-linkedin-square", color: "color-linkedin-blue" },
+                    //{ provider: "pinterest", imgUrl: "fa-pinterest-square", color: "color-pinterest-red" },
+                    { provider: "facebook", imgUrl: "fa-facebook-square", color: "color-facebook-blue" },
                     { provider: "twitter", imgUrl: "fa-twitter-square", color: "color-twitter-blue" },
-                    { provider: "facebook", imgUrl: "fa-facebook-square", color: "color-facebook-blue" }
+                    { provider: "google", imgUrl: "fa-google-plus-square", color: "color-googleplus-red" },
+                    { provider: "linkedin", imgUrl: "fa-linkedin-square", color: "color-linkedin-blue" }
                 ];
                 return shareSites;
             };
             return ShareService;
-        })();
+        }());
         services.ShareService = ShareService;
         angular.module("ShareDemo").service("app.services.ShareService", ShareService);
     })(services = app.services || (app.services = {}));

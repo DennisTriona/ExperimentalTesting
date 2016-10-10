@@ -1,7 +1,23 @@
 ﻿/*--- CUSTOM CSS ---*/
+footer {
+    background-color: #36373B;
+    color: lightgrey;
+    text-align: center;
+    position: absolute;
+    right: 2em;
+    left: 2em;
+    bottom: 0;
+}
+.yammerbtn {
+    color: #187FCB;
+}
 .custom-btn {
-    padding: 1%;
-    background-color: #E2E6E7;
+    /*padding: 1%;*/
+    background-color: transparent;
+    margin: 0 1% 0 1%; 
+}
+.socialButtonContainer {
+    text-align: center;
 }
 
 .bannerImage {

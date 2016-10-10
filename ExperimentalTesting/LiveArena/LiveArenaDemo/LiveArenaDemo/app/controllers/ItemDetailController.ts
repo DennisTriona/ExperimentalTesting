@@ -5,7 +5,7 @@
         resourceService: app.interfaces.IResourceService;
         item: app.interfaces.ISelectItem;
 
-        static $inject = ["$routeParams", "app.services.ResourceService"]
+        static $inject = ["$routeParams", "app.services.ResourceService"];
         constructor(private $routeParams: app.interfaces.ISelectItemParams,
                     resourceService: app.services.ResourceService) {
 

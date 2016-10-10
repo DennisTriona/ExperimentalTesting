@@ -26,7 +26,7 @@ var app;
                     }
                 };
                 return EventDispatcher;
-            })();
+            }());
             common.EventDispatcher = EventDispatcher;
         })(common = nothing.common || (nothing.common = {}));
     })(nothing = app.nothing || (app.nothing = {}));

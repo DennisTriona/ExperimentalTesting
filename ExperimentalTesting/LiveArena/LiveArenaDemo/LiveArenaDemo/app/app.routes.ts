@@ -14,6 +14,7 @@
 
             // For better routing but does not really work well on our current set up
             // Must install IIS rewrite extension and such so don't bother
+            
             //if (window.history && window.history.pushState) {
             //    $locationProvider.html5Mode({ enabled: true, requireBase: false });
             //}

@@ -119,7 +119,7 @@ var app;
                     this.ball.ResetPosition(this.border.rectangle.width / 2, this.border.rectangle.height / 2);
                 };
                 return GameService;
-            })();
+            }());
             services.GameService = GameService;
             angular.module("ShareDemo").service("app.nothing.services.GameService", GameService);
         })(services = nothing.services || (nothing.services = {}));
