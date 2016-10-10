@@ -47,7 +47,7 @@
                     id: 7, description: "SDHL HV 71 - MODO Hockey", date: "1 okt. 2016 16:25", publisher: "by HV71 SDHL",
                     thumbnail_imgUrl: "https://bcstatic.azureedge.net/default-images/d1c747d2-8738-45e2-e413-106dc1f80da1-HV71_thumbnail.gif?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D",
                     display_imgUrl: "https://bcstatic.blob.core.windows.net/default-images/0d8f063a-bf30-4502-92d9-bcf80ebd7333-HV71.gif?sv=2014-02-14&sr=c&si=default-images&sig=adnUtvq%2F89HPIjummkv%2BTG8FDpmBw4rbz8GRXUR0jF0%3D" 
-                },
+                }
             ];
 
             this.dummyItem = {

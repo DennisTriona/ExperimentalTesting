@@ -9,6 +9,7 @@ var app;
             // Collection of share sites, their name and extra
             ShareService.prototype.getShareSites = function () {
                 var shareSites = [
+                    //{ provider: "tumblr", imgUrl: "fa-tumblr-square", color: "color-tumblr" },
                     { provider: "pinterest", imgUrl: "fa-pinterest-square", color: "color-pinterest-red" },
                     { provider: "google", imgUrl: "fa-google-plus-square", color: "color-googleplus-red" },
                     { provider: "linkedin", imgUrl: "fa-linkedin-square", color: "color-linkedin-blue" },

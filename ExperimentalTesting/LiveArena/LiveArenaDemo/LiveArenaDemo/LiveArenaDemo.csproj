@@ -40,13 +40,14 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
-    <Content Include="node_modules\bootstrap-block-grid\demo\index.html" />
-    <Content Include="node_modules\bootstrap-block-grid\demo\style.css" />
-    <Content Include="node_modules\bootstrap-block-grid\dist\bootstrap3-block-grid.css" />
-    <Content Include="node_modules\bootstrap-block-grid\dist\bootstrap3-block-grid.min.css" />
-    <Content Include="node_modules\bootstrap-block-grid\dist\bootstrap4-block-grid.css" />
-    <Content Include="node_modules\bootstrap-block-grid\dist\bootstrap4-block-grid.min.css" />
-    <Content Include="node_modules\bootstrap-block-grid\Gruntfile.js" />
+    <Content Include="jsSocial.html" />
+    <None Include="LiveADemo.pubxml" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\MetaTagging.js" />
     <Content Include="Scripts\socialshare\angular-socialshare.js" />
     <Content Include="Scripts\socialshare\angular-socialshare.min.js" />
     <Content Include="Resources.txt" />
@@ -69,21 +70,8 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="node_modules\bootstrap-block-grid\.npmignore" />
-    <Content Include="node_modules\bootstrap-block-grid\bower.json" />
-    <Content Include="node_modules\bootstrap-block-grid\LICENSE" />
-    <Content Include="node_modules\bootstrap-block-grid\package.json" />
-    <Content Include="node_modules\bootstrap-block-grid\README.md" />
-    <Content Include="node_modules\bootstrap-block-grid\src\bootstrap3-block-grid.scss" />
-    <Content Include="node_modules\bootstrap-block-grid\src\bootstrap4-block-grid.scss" />
-    <Content Include="node_modules\bootstrap-block-grid\src\_bootstrap.gridblock.scss" />
-    <Content Include="node_modules\bootstrap-block-grid\src\_bootstrap3.breakpoints.scss" />
-    <Content Include="node_modules\bootstrap-block-grid\src\_bootstrap4.breakpoints.scss" />
-    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="SpecRunner.html" />
     <Content Include="tests\jasmine-2.5.2\boot.js" />
     <Content Include="tests\jasmine-2.5.2\console.js" />
@@ -100,7 +88,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Scripts\angular-route.min.js.map" />
-    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -112,10 +101,12 @@
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routes.ts" />
     <TypeScriptCompile Include="app\controllers\ItemDetailController.ts" />
+    <TypeScriptCompile Include="app\controllers\MetaController.ts" />
     <TypeScriptCompile Include="app\controllers\SelectController.ts" />
     <TypeScriptCompile Include="app\controllers\ShareController.ts" />
     <TypeScriptCompile Include="app\directives\DateDirective.ts" />
     <TypeScriptCompile Include="app\directives\ShareDirective.ts" />
+    <TypeScriptCompile Include="app\interfaces\IMeta.ts" />
     <TypeScriptCompile Include="app\interfaces\ISelectItem.ts" />
     <TypeScriptCompile Include="app\interfaces\ISelectItemParams.ts" />
     <TypeScriptCompile Include="app\interfaces\IResourceService.ts" />
@@ -133,6 +124,7 @@
     <TypeScriptCompile Include="app\nothing\objects\ScoreManager.ts" />
     <TypeScriptCompile Include="app\nothing\services\GameService.ts" />
     <Content Include="app\nothing\views\nothingView.html" />
+    <TypeScriptCompile Include="app\services\MetaService.ts" />
     <TypeScriptCompile Include="app\services\ResourceService.ts" />
     <TypeScriptCompile Include="app\services\ShareService.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
@@ -145,7 +137,9 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="node_modules\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>

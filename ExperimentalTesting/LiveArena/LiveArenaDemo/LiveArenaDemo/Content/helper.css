@@ -303,6 +303,7 @@ button {
 .color-success {
     color: #2AC171;
 }
+/*--- BRAND COLORS ---*/
 
 .color-facebook-blue {
     color: #3b5998;
@@ -322,6 +323,9 @@ button {
 
 .color-pinterest-red {
     color: #bd081c;
+}
+.color-tumblr {
+    color: #35465c;
 }
 /*--- HOVER COLORS ---*/
 .facebook-hover:hover {
